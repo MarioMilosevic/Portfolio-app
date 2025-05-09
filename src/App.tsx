@@ -1,8 +1,10 @@
+import Navigation from "src/components/ui/Navigation";
+
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <>
+      <Navigation />
+    </>
   );
 }
 
