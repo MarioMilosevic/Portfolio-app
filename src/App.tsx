@@ -1,11 +1,11 @@
-import Navigation from "src/components/ui/Navigation";
-import Hero from "./components/ui/Hero";
+import Navigation from "@/components/ui/Navigation";
+import Hero from "@/components/ui/Hero";
 
 function App() {
   return (
     <>
       <Navigation />
-      <Hero/>
+      <Hero />
     </>
   );
 }
