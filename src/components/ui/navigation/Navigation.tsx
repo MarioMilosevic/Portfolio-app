@@ -1,6 +1,6 @@
 import { navigationLinks } from "@/lib/constants";
 import { useState } from "react";
-import NavigationButton from "@/components/ui/NavigationButton";
+import NavigationButton from "@/components/ui/navigation/NavigationButton";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState<number>(0);

@@ -1,5 +1,6 @@
 // import marioImage from "/images/Mario.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import HeroIcon from "@/components/ui/hero/HeroIcon";
 const Hero = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
@@ -9,16 +10,12 @@ const Hero = () => {
           <h1 className="text-5xl font-bold">Mario Milošević</h1>
           <p className="py-6 text-lg">FRONTEND DEVELOPER</p>
           <div className="flex gap-4 items-center">
-            <a href="https://github.com/MarioMilosevic" target="_blank">
+            <HeroIcon path="https://github.com/MarioMilosevic">
               <FaGithub size={30} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mario-milosevic/"
-              target="_blank"
-              className=" hover:scale-110 hover:-translate-y-1 transition-all duration-300 "
-            >
+            </HeroIcon>
+            <HeroIcon path="https://www.linkedin.com/in/mario-milosevic/">
               <FaLinkedin size={30} />
-            </a>
+            </HeroIcon>
             <button className="btn btn-outline btn-primary">Resume</button>
           </div>
         </div>

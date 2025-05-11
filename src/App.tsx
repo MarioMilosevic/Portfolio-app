@@ -1,5 +1,5 @@
-import Navigation from "@/components/ui/Navigation";
-import Hero from "@/components/ui/Hero";
+import Navigation from "@/components/ui/navigation/Navigation";
+import Hero from "@/components/ui/hero/Hero";
 
 function App() {
   return (
