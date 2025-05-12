@@ -1,4 +1,3 @@
-// import marioImage from "/images/Mario.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/Section";
@@ -8,7 +7,6 @@ const Hero = () => {
     <Section className="max-w-full bg-slate-700 pt-0">
       <div className="hero h-screen">
         <div className="hero-content flex-col lg:flex-row">
-          {/* <img src={marioImage} className="max-w-sm rounded-lg shadow-2xl" /> */}
           <div>
             <h1 className="text-5xl font-bold">Mario Milošević</h1>
             <p className="py-6 text-lg">FRONTEND DEVELOPER</p>
