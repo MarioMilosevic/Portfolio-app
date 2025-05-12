@@ -5,7 +5,7 @@ import Section from "@/components/ui/Section";
 
 const Hero = () => {
   return (
-    <Section className="">
+    <Section className="max-w-full bg-slate-700 pt-0">
       <div className="hero h-screen">
         <div className="hero-content flex-col lg:flex-row">
           {/* <img src={marioImage} className="max-w-sm rounded-lg shadow-2xl" /> */}
