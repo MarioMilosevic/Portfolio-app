@@ -1,12 +1,18 @@
 import marioImage from "/images/Mario.jpg";
 import Contact from "@/components/ui/about/Contact";
-import Content from "@/components/ui/about/Content";
 import { cn } from "@/lib/utils";
-import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+} from "react-icons/fa";
 
 const ContactInformation = ({ className }: { className: string }) => {
   return (
-    <div className={cn("flex flex-col gap-2", className)}>
+    <div className={cn("flex flex-col gap-2 border-r border-r-white", className)}>
       <img
         src={marioImage}
         alt="Contact image"
@@ -14,11 +20,27 @@ const ContactInformation = ({ className }: { className: string }) => {
       />
       <Contact>
         <FaMapMarkerAlt />
-        <Content>Serbia, Novi Sad</Content>
+        <p>Serbia, Novi Sad</p>
       </Contact>
       <Contact>
         <FaEnvelope />
-        <Content>mariomilosevic887@gmail.com</Content>
+        <p>mariomilosevic887@gmail.com</p>
+      </Contact>
+      <Contact>
+        <FaPhone />
+        <p>+381658887995</p>
+      </Contact>
+      <Contact>
+        <FaGithub />
+        <p>@mariomilosevic</p>
+      </Contact>
+      <Contact>
+        <FaLinkedin />
+        <p>@mariomilosevic</p>
+      </Contact>
+      <Contact>
+        <FaInstagram />
+        <p>@buffbrain</p>
       </Contact>
     </div>
   );
