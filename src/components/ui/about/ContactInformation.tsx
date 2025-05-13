@@ -1,6 +1,5 @@
 import marioImage from "/images/Mario.jpg";
 import Contact from "@/components/ui/about/Contact";
-import { cn } from "@/lib/utils";
 import {
   FaMapMarkerAlt,
   FaEnvelope,
@@ -10,9 +9,9 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-const ContactInformation = ({ className }: { className?: string }) => {
+const ContactInformation = () => {
   return (
-    <div className={cn("flex flex-col gap-2 border-r border-r-white pr-4", className)}>
+    <div className="flex flex-col gap-2 border-r border-r-white pr-8">
       <img
         src={marioImage}
         alt="Contact image"

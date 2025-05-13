@@ -1,8 +1,9 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
-import Section from "@/components/ui/Section";
+import Section from "@/components/ui/others/Section";
 
 const Hero = () => {
+  const iconSize = 25;
   return (
     <Section className="max-w-full bg-slate-700 pt-0">
       <div
@@ -22,10 +23,10 @@ const Hero = () => {
               <p className="py-6 text-lg">FRONTEND DEVELOPER</p>
               <div className="flex gap-4 items-center">
                 <HeroIcon path="https://github.com/MarioMilosevic">
-                  <FaGithub size={25} />
+                  <FaGithub size={iconSize} />
                 </HeroIcon>
                 <HeroIcon path="https://www.linkedin.com/in/mario-milosevic/">
-                  <FaLinkedin size={25} />
+                  <FaLinkedin size={iconSize} />
                 </HeroIcon>
                 <HeroIcon path="/">Resume</HeroIcon>
               </div>
