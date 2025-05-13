@@ -2,7 +2,7 @@ import Paragraph from "@/components/ui/others/Paragraph";
 
 const Description = () => {
   return (
-    <div className="flex flex-col gap-4 pl-8">
+    <div className="flex flex-col justify-center gap-4 pl-8">
       <Paragraph>
         I am a frontend developer from Montenegro who is passionate about
         creating user-friendly web experiences, skilled in React, Vue, Node,

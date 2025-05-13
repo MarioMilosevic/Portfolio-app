@@ -15,7 +15,7 @@ const ContactInformation = () => {
       <img
         src={marioImage}
         alt="Contact image"
-        className="rounded-full w-50 h-50 object-cover"
+        className="rounded-full w-50 h-50 object-cover mb-10"
       />
       <Contact>
         <FaMapMarkerAlt />
