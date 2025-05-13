@@ -10,9 +10,9 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-const ContactInformation = ({ className }: { className: string }) => {
+const ContactInformation = ({ className }: { className?: string }) => {
   return (
-    <div className={cn("flex flex-col gap-2 border-r border-r-white", className)}>
+    <div className={cn("flex flex-col gap-2 border-r border-r-white pr-4", className)}>
       <img
         src={marioImage}
         alt="Contact image"
