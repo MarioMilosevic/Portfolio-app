@@ -22,12 +22,12 @@ const Hero = () => {
               <p className="py-6 text-lg">FRONTEND DEVELOPER</p>
               <div className="flex gap-4 items-center">
                 <HeroIcon path="https://github.com/MarioMilosevic">
-                  <FaGithub size={30} />
+                  <FaGithub size={25} />
                 </HeroIcon>
                 <HeroIcon path="https://www.linkedin.com/in/mario-milosevic/">
-                  <FaLinkedin size={30} />
+                  <FaLinkedin size={25} />
                 </HeroIcon>
-                <button className="btn btn-outline btn-primary">Resume</button>
+                <HeroIcon path="/">Resume</HeroIcon>
               </div>
             </div>
           </div>
