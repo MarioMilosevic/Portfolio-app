@@ -1,34 +1,18 @@
 import { motion } from "motion/react";
 
 const ScrollDownIndicator = () => {
-  const arrowVariants = {
-    initial: { opacity: 0, x: -20, y: -20 },
-    animate: {
-      opacity: [0, 1, 0],
-      x: [-20, 0, 20],
-      y: [-20, 0, 20],
-      transition: {
-        duration: 2,
-        repeat: Infinity,
-      },
-    },
-  };
-
   return (
-    <button className="absolute bottom-20 right-1/2 translate-x-1/2 z-40 cursor-pointer flex flex-col items-center gap-3">
-      <span className="text-white text-sm tracking-widest">SCROLL</span>
-      <div className="flex flex-col items-center gap-1">
-        {[0, 0.2, 0.4].map((delay, i) => (
-          <motion.span
-            key={i}
-            className="block w-5 h-5 border-b border-r border-white rotate-45"
-            variants={arrowVariants}
-            initial="initial"
-            animate="animate"
-            transition={{ duration: 2, repeat: Infinity, delay }}
-          />
-        ))}
-      </div>
+    <button className="w-8 h-16 border-2 border-white rounded-3xl z-40 flex justify-center items-start absolute bottom-8 right-1/2 translate-x-1/2 cursor-pointer">
+      <motion.div
+        className="w-2 h-2 rounded-full bg-[#99aab5] absolute"
+        initial={{ bottom: "80%", opacity: 1 }}
+        animate={{ bottom: "20%", opacity: 0 }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
     </button>
   );
 };

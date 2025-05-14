@@ -1,13 +1,15 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "motion/react";
+import { useRef } from "react";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
 
 const Hero = () => {
+  const heroRef = useRef<HTMLElement | null>(null);
   const iconSize = 25;
   return (
-    <Section className="max-w-full pt-0">
+    <Section id="hero" className="max-w-full pt-0" ref={heroRef}>
       <div
         className="hero min-h-screen relative"
         style={{
@@ -43,16 +45,10 @@ const Hero = () => {
                 className="flex gap-4 items-center"
               >
                 <HeroIcon path="https://github.com/MarioMilosevic">
-                  <FaGithub
-                    size={iconSize}
-                    color="white"
-                  />
+                  <FaGithub size={iconSize} color="white" />
                 </HeroIcon>
                 <HeroIcon path="https://www.linkedin.com/in/mario-milosevic/">
-                  <FaLinkedin
-                    size={iconSize}
-                    color="white"
-                  />
+                  <FaLinkedin size={iconSize} color="white" />
                 </HeroIcon>
                 <HeroIcon path="/">
                   <p className="text-white text-lg">Resume</p>

@@ -3,7 +3,7 @@ import Section from "@/components/ui/others/Section";
 
 const Experience = () => {
   return (
-    <Section>
+    <Section id="experience">
       <Subtitle>Experience</Subtitle>
     </Section>
   );
