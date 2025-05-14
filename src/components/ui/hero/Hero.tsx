@@ -1,11 +1,12 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "motion/react";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/others/Section";
 
 const Hero = () => {
   const iconSize = 25;
   return (
-    <Section className="max-w-full bg-slate-700 pt-0">
+    <Section className="max-w-full pt-0">
       <div
         className="hero min-h-screen relative"
         style={{
@@ -15,13 +16,31 @@ const Hero = () => {
         }}
       >
         <div className="hero-overlay absolute w-full h-full backdrop-blur-sm z-10"></div>
-
-        <div className="hero-content text-neutral-content flex flex-col absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 z-20">
+        <div className="hero-content text-neutral-content flex flex-col z-20">
           <div className="hero-content flex-col lg:flex-row">
-            <div>
-              <h1 className="text-5xl font-bold">Mario Milošević</h1>
-              <p className="py-6 text-lg">FRONTEND DEVELOPER</p>
-              <div className="flex gap-4 items-center">
+            <div className="flex flex-col gap-6">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="text-7xl font-bold"
+              >
+                Mario Milošević
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+                className="text-2xl"
+              >
+                FRONTEND DEVELOPER
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.9 }}
+                className="flex gap-4 items-center"
+              >
                 <HeroIcon path="https://github.com/MarioMilosevic">
                   <FaGithub size={iconSize} />
                 </HeroIcon>
@@ -29,7 +48,7 @@ const Hero = () => {
                   <FaLinkedin size={iconSize} />
                 </HeroIcon>
                 <HeroIcon path="/">Resume</HeroIcon>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
