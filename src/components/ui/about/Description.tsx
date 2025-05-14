@@ -2,7 +2,7 @@ const Description = () => {
   return (
     <div className="flex flex-col justify-center gap-4 pl-8">
       <p>
-        I am a frontend developer from Montenegro who is passionate about
+        I am a frontend developer from Montenegro currently living in Serbia who is passionate about
         creating user-friendly web experiences, skilled in React, Vue, Node,
         Next and TypeScript, and focusing on building responsive and modern web
         applications.
