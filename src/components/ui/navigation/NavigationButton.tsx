@@ -4,20 +4,20 @@ import clsx from "clsx";
 type NavigationButtonProps = {
   children: ReactNode;
   isActive: boolean;
-  setActiveLink: (index: number) => void;
-  index: number;
+  onNavigationClick: () => void;
 };
 
 const NavigationButton = ({
   children,
   isActive,
-  setActiveLink,
-  index,
+  onNavigationClick,
 }: NavigationButtonProps) => {
   return (
     <button
-      className={clsx("btn btn-soft btn-primary", { "btn-active": isActive })}
-      onClick={() => setActiveLink(index)}
+      className={clsx("btn btn-soft btn-primary", {
+        "btn-active": isActive,
+      })}
+      onClick={onNavigationClick}
     >
       {children}
     </button>

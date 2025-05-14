@@ -7,7 +7,7 @@ import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
 const Hero = () => {
   const iconSize = 25;
   return (
-    <Section id="hero" className="max-w-full pt-0">
+    <Section id="home" className="max-w-full pt-0">
       <div
         className="hero min-h-screen relative"
         style={{
