@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "motion/react";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/others/Section";
+import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
 
 const Hero = () => {
   const iconSize = 25;
@@ -42,20 +43,25 @@ const Hero = () => {
                 className="flex gap-4 items-center"
               >
                 <HeroIcon path="https://github.com/MarioMilosevic">
-                  <FaGithub size={iconSize} color="white"/>
+                  <FaGithub
+                    size={iconSize}
+                    color="white"
+                  />
                 </HeroIcon>
                 <HeroIcon path="https://www.linkedin.com/in/mario-milosevic/">
-                  <FaLinkedin size={iconSize} color="white"/>
+                  <FaLinkedin
+                    size={iconSize}
+                    color="white"
+                  />
                 </HeroIcon>
                 <HeroIcon path="/">
-                  <p className="text-white text-lg">
-                  Resume
-                </p>
+                  <p className="text-white text-lg">Resume</p>
                 </HeroIcon>
               </motion.div>
             </div>
           </div>
         </div>
+        <ScrollDownIndicator />
       </div>
     </Section>
   );

@@ -6,7 +6,7 @@ const Experience = () => {
     <Section>
       <Subtitle>Experience</Subtitle>
     </Section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
