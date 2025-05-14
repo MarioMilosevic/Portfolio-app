@@ -1,15 +1,13 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "motion/react";
-import { useRef } from "react";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
 
 const Hero = () => {
-  const heroRef = useRef<HTMLElement | null>(null);
   const iconSize = 25;
   return (
-    <Section id="hero" className="max-w-full pt-0" ref={heroRef}>
+    <Section id="hero" className="max-w-full pt-0">
       <div
         className="hero min-h-screen relative"
         style={{

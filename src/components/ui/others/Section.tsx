@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import React, { forwardRef } from "react";
 
 type SectionProps = {
   children: React.ReactNode;
@@ -7,18 +6,15 @@ type SectionProps = {
   id: string;
 };
 
-export const Section = forwardRef<HTMLElement, SectionProps>(
-  ({ children, className, id }, ref) => {
-    return (
-      <section
-        id={id}
-        ref={ref}
-        className={cn("pt-12 pb-12 max-w-[1280px] mx-auto", className)}
-      >
-        {children}
-      </section>
-    );
-  }
-);
+export const Section = ({ children, className, id }: SectionProps) => {
+  return (
+    <section
+      id={id}
+      className={cn("pt-12 pb-12 max-w-[1280px] mx-auto", className)}
+    >
+      {children}
+    </section>
+  );
+};
 
 export default Section;
