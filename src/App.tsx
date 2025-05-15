@@ -2,27 +2,25 @@ import Navigation from "@/components/ui/navigation/Navigation";
 import Hero from "@/components/ui/hero/Hero";
 import About from "@/components/ui/about/About";
 import Experience from "@/components/ui/experience/Experience";
-import { useEffect, useState } from "react";
+import { useState, useRef } from "react";
+import { useScrollSpy } from "./hooks/useScrollSpy";
 
 function App() {
-    const [activeLink, setActiveLink] = useState<number>(0);
-  
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      console.log('skrol')
-      /**
-       * za svaku sekciju if(window.scrollY >= sectionEL.offsetTop){
-       * curretnSection = sectionEl.id
-       * }
-       */
-    })
-  }, [])
+  const heroRef = useRef<HTMLElement | null>(null);
+  const aboutRef = useRef<HTMLElement | null>(null);
+  const experienceRef = useRef<HTMLElement | null>(null);
+
+  const { activeIndex, setActiveIndex } = useScrollSpy({
+    sectionRefs: [heroRef, aboutRef, experienceRef],
+    offset: 0,
+  });
+
   return (
     <>
-      <Navigation activeLink={activeLink} setActiveLink={setActiveLink } />
-      <Hero />
-      <About />
-      <Experience />
+      <Navigation activeLink={activeIndex} setActiveLink={setActiveIndex} />
+      <Hero ref={heroRef} />
+      <About ref={aboutRef} />
+      <Experience ref={experienceRef} />
     </>
   );
 }

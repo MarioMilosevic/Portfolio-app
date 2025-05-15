@@ -3,12 +3,12 @@ import { motion } from "motion/react";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
-import { memo } from "react";
+import { memo, forwardRef } from "react";
 
-const Hero = () => {
+const Hero = forwardRef(({_}, ref) => {
   const iconSize = 25;
   return(
-    <Section id="home" className="max-w-full pt-0">
+    <Section id="home" className="max-w-full pt-0" ref={ref}>
       <div
         className="hero min-h-screen relative"
         style={{
@@ -60,6 +60,7 @@ const Hero = () => {
       </div>
     </Section>
   );
-};
+}
+)
 
 export default memo(Hero);
