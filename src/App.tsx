@@ -2,7 +2,7 @@ import Navigation from "@/components/ui/navigation/Navigation";
 import Hero from "@/components/ui/hero/Hero";
 import About from "@/components/ui/about/About";
 import Experience from "@/components/ui/experience/Experience";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { useScrollSpy } from "./hooks/useScrollSpy";
 
 function App() {

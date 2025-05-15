@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 type ScrollSpyConfig = {
-  sectionRefs: React.RefObject<HTMLElement>[];
+  sectionRefs: React.RefObject<HTMLElement | null>[];
   offset?: number;
 };
 
@@ -38,3 +38,6 @@ export function useScrollSpy({ sectionRefs, offset = 0 }: ScrollSpyConfig) {
 
     return { activeIndex, setActiveIndex };
 }
+
+
+

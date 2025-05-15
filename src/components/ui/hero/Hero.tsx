@@ -5,9 +5,9 @@ import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
 import { memo, forwardRef } from "react";
 
-const Hero = forwardRef(({_}, ref) => {
+const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>((_, ref) => {
   const iconSize = 25;
-  return(
+  return (
     <Section id="home" className="max-w-full pt-0" ref={ref}>
       <div
         className="hero min-h-screen relative"
@@ -60,7 +60,8 @@ const Hero = forwardRef(({_}, ref) => {
       </div>
     </Section>
   );
-}
-)
+});
+
+Hero.displayName = "Hero";
 
 export default memo(Hero);
