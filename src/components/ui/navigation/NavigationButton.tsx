@@ -13,14 +13,14 @@ const NavigationButton = ({
   onNavigationClick,
 }: NavigationButtonProps) => {
   return (
-    <button
-      className={clsx("btn btn-soft btn-primary", {
-        "btn-active": isActive,
-      })}
-      onClick={onNavigationClick}
-    >
-      {children}
-    </button>
+    <li>
+      <a
+        className={clsx("btn btn-soft btn-primary", { "btn-active": isActive })}
+        onClick={onNavigationClick}
+      >
+        {children}
+      </a>
+    </li>
   );
 };
 

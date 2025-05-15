@@ -3,10 +3,11 @@ import { motion } from "motion/react";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
+import { memo } from "react";
 
 const Hero = () => {
   const iconSize = 25;
-  return (
+  return(
     <Section id="home" className="max-w-full pt-0">
       <div
         className="hero min-h-screen relative"
@@ -61,4 +62,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default memo(Hero);

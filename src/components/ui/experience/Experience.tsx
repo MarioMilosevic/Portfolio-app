@@ -1,5 +1,6 @@
 import Subtitle from "@/components/ui/others/Subtitle";
 import Section from "@/components/ui/others/Section";
+import { memo } from "react";
 
 const Experience = () => {
   return (
@@ -9,4 +10,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default memo(Experience);
