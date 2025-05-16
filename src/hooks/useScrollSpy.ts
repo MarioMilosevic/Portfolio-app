@@ -30,14 +30,11 @@ export function useScrollSpy({ sectionRefs, offset = 0 }: ScrollSpyConfig) {
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll);
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionRefs, offset]);
 
-    return { activeIndex, setActiveIndex };
+  return { activeIndex, setActiveIndex };
 }
-
-
-

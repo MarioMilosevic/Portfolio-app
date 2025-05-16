@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import HeroIcon from "@/components/ui/hero/HeroIcon";
 import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
+import { scrollToSection } from "@/lib/utils";
 import { memo, forwardRef } from "react";
 
 const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>((_, ref) => {
@@ -56,7 +57,7 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>((_, ref)
             </div>
           </div>
         </div>
-        <ScrollDownIndicator />
+        <ScrollDownIndicator onScroll={ () => scrollToSection('about')} />
       </div>
     </Section>
   );
