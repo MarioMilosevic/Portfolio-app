@@ -2,6 +2,8 @@ import Navigation from "@/components/ui/navigation/Navigation";
 import Hero from "@/components/ui/hero/Hero";
 import About from "@/components/ui/about/About";
 import Experience from "@/components/ui/experience/Experience";
+import Projects from "@/components/ui/projects/Projects";
+
 import { useRef } from "react";
 import { useScrollSpy } from "./hooks/useScrollSpy";
 
@@ -9,9 +11,10 @@ function App() {
   const heroRef = useRef<HTMLElement | null>(null);
   const aboutRef = useRef<HTMLElement | null>(null);
   const experienceRef = useRef<HTMLElement | null>(null);
+  const projectsRef = useRef<HTMLElement | null>(null);
 
   const { activeIndex, setActiveIndex } = useScrollSpy({
-    sectionRefs: [heroRef, aboutRef, experienceRef],
+    sectionRefs: [heroRef, aboutRef, experienceRef, projectsRef],
     offset: 0,
   });
 
@@ -21,6 +24,7 @@ function App() {
       <Hero ref={heroRef} />
       <About ref={aboutRef} />
       <Experience ref={experienceRef} />
+      <Projects ref={projectsRef} />
     </>
   );
 }
