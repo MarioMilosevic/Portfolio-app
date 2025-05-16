@@ -1,5 +1,5 @@
 const ProjectTitle = ({ children }: { children: React.ReactNode }) => {
-  return <h2 className="uppercase font-semibold tracking-wide">{children}</h2>;
+  return <header className="border">{children}</header>;
 };
 
 export default ProjectTitle;
