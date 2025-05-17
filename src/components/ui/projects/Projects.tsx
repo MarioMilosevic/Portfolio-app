@@ -20,11 +20,11 @@ const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     const iconObjects = [
       {
         icon: FaVuejs,
-        text: "Vue3",
+        text: "Vue.js",
       },
       {
         icon: SiExpress,
-        text: "Express",
+        text: "Express.js",
       },
       {
         icon: SiPostgresql,
