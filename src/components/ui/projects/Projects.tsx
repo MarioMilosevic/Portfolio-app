@@ -8,12 +8,30 @@ import ProjectTitleWrapper from "@/components/ui/projects/header/ProjectTitleWra
 import ProjectMain from "@/components/ui/projects/main/ProjectMain";
 import ProjectDescription from "@/components/ui/projects/main/ProjectDescription";
 import ProjectImage from "@/components/ui/projects/main/ProjectImage";
+import ProjectFooter from "@/components/ui/projects/footer/ProjectFooter";
+import ProjectTechnologies from "@/components/ui/projects/footer/ProjectTechnologies";
 
 import { forwardRef } from "react";
-import { FaGamepad } from "react-icons/fa";
+import { FaGamepad, FaVuejs } from "react-icons/fa";
+import { SiExpress, SiVuedotjs, SiPostgresql } from "react-icons/si";
 
 const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
+    const iconObjects = [
+      {
+        icon: FaVuejs,
+        text: "Vue3",
+      },
+      {
+        icon: SiExpress,
+        text: "Express",
+      },
+      {
+        icon: SiPostgresql,
+        text: "PostgreSQL",
+      },
+    ];
+
     return (
       <Section id="projects" ref={ref} className="flex flex-col gap-2">
         <Subtitle>Freetime Projects</Subtitle>
@@ -48,6 +66,9 @@ const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
             </ProjectDescription>
             <ProjectImage path="/images/projects/gameVerseImg.PNG" />
           </ProjectMain>
+          <ProjectFooter>
+            <ProjectTechnologies iconObj={iconObjects} />
+          </ProjectFooter>
         </Project>
       </Section>
     );
