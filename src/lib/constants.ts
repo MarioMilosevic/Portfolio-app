@@ -5,6 +5,7 @@ import {
   FaReact,
   FaLightbulb,
   FaSass,
+  FaBed,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -13,6 +14,7 @@ import {
   SiRedux,
   SiCloudinary,
   SiSupabase,
+  SiTypescript,
 } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { BiSolidMoviePlay } from "react-icons/bi";
@@ -39,6 +41,7 @@ export const personalProjects: ProjectType[] = [
     projectIcons: [
       { icon: FaVuejs, text: "Vue.js" },
       { icon: SiExpress, text: "Express.js" },
+      { icon: SiTypescript, text: "TypeScript" },
       { icon: SiPostgresql, text: "PostgreSQL" },
       { icon: SiTailwindcss, text: "TailwindCSS" },
     ],
@@ -55,6 +58,7 @@ export const personalProjects: ProjectType[] = [
     projectIcons: [
       { icon: FaReact, text: "React.js" },
       { icon: SiRedux, text: "Redux Toolkit" },
+      { icon: SiTypescript, text: "TypeScript" },
       { icon: SiTailwindcss, text: "TailwindCSS" },
     ],
     code: "https://github.com/MarioMilosevic/x-shoppers-dream-e-commerce",
@@ -69,6 +73,7 @@ export const personalProjects: ProjectType[] = [
     imagePath: "/images/projects/product-feedback.PNG",
     projectIcons: [
       { icon: FaVuejs, text: "Vue.js" },
+      { icon: SiTypescript, text: "TypeScript" },
       { icon: SiCloudinary, text: "Cloudinary" },
       { icon: SiSupabase, text: "Supabase" },
       { icon: FaSass, text: "Sass" },
@@ -86,6 +91,7 @@ export const personalProjects: ProjectType[] = [
     projectIcons: [
       { icon: FaReact, text: "React.js" },
       { icon: SiRedux, text: "Redux Toolkit" },
+      { icon: SiTypescript, text: "TypeScript" },
       { icon: IoLogoFirebase, text: "Firebase" },
       { icon: SiTailwindcss, text: "TailwindCSS" },
     ],
@@ -103,10 +109,28 @@ export const personalProjects: ProjectType[] = [
     projectIcons: [
       { icon: FaVuejs, text: "Vue.js" },
       { icon: SiExpress, text: "Express.js" },
+      { icon: SiTypescript, text: "TypeScript" },
       { icon: FaSass, text: "Sass" },
       { icon: SiPostgresql, text: "PostgreSQL" },
     ],
     code: "https://github.com/MarioMilosevic/Employee-Manager",
     liveDemo: "https://employee-manager-ashy.vercel.app/",
+  },
+  {
+    mainIcon: FaBed,
+    createdAt: "August 2024",
+    title: "CityLaneRooms - Admin Room Management",
+    description:
+      "CityLaneRooms is an admin-focused full-stack room management application. It features room, bookings, settings, and user management. The frontend is built with React.js, and Supabase is used for the backend and database.\n\nLogin credentials:\nUsername: admin@gmail.com\nPassword: 12345678",
+
+    imagePath: "/images/projects/citylane-rooms.PNG",
+    projectIcons: [
+      { icon: FaReact, text: "React.js" },
+      { icon: SiSupabase, text: "Supabase" },
+      { icon: SiTypescript, text: "TypeScript" },
+      { icon: SiTailwindcss, text: "TailwindCSS" },
+    ],
+    code: "https://github.com/MarioMilosevic/CityLane-Rooms",
+    liveDemo: "https://city-lane-rooms.vercel.app/",
   },
 ];
