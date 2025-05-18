@@ -1,9 +1,18 @@
-const ProjectAction = ({children}:{children:React.ReactNode}) => {
-  return (
-    <div className="flex items-center gap-2 cursor-pointer px-3 py-1.5 rounded-full  hover:bg-slate-800">
-      {children}
-    </div>
-  )
-}
+type ProjectActionProps = {
+  children: React.ReactNode;
+  path: string;
+};
 
-export default ProjectAction
+const ProjectAction = ({ children, path }: ProjectActionProps) => {
+  return (
+    <a
+      className="flex items-center gap-2 cursor-pointer px-3 py-1.5 rounded-lg  hover:bg-slate-800"
+      href={path}
+      target="_blank"
+    >
+      {children}
+    </a>
+  );
+};
+
+export default ProjectAction;

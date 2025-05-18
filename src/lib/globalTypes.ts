@@ -13,4 +13,6 @@ export type ProjectType = {
   description: string;
   imagePath: string;
   projectIcons: IconObjType[];
+  code: string;
+  liveDemo: string;
 }

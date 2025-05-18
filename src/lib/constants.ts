@@ -16,12 +16,29 @@ export const personalProjects: ProjectType[] = [
     createdAt: "April 2025",
     title: "GameVerse game store for some of my favorite video games",
     description:
-      "GameVerse is a full-stack application with a responsive design, built with Vue 3 on the frontend and Express.js on the backend, using a PostgreSQL database to store data. The app features a collection of 9 games, and users can create an account to leave reviews (rated 1–10) and comments for each game. Zod is used on the frontend for form validation, while the backend returns appropriate response messages for each request. After signing up, users must log in, at which point a JWT is generated on the server, sent to the client, and stored in localStorage. The UI is styled with Tailwind CSS and includes a dark mode feature, with the selected theme also stored in localStorage to persist user preferences. Users can update their profile information, including their name, email, and profile image. The app also includes a dedicated admin dashboard for user management, accessible only to admin users. The project is hosted on Render.",
+      "GameVerse is a full-stack app built with Vue 3, Express.js, and PostgreSQL. It features 9 games, user accounts with JWT-based auth, and the ability to leave ratings (1–10) and comments. The UI, styled with Tailwind CSS, supports dark mode and is fully responsive. Users can update their profiles, and an admin dashboard provides user management tools. The frontend uses Zod for validation, and the backend returns clear response messages. User preferences and JWTs are stored in localStorage. Hosted on Render.",
     imagePath: "/images/projects/gameVerseImg.PNG",
     projectIcons: [
       { icon: FaVuejs, text: "Vue.js" },
       { icon: SiExpress, text: "Express.js" },
       { icon: SiPostgresql, text: "PostgreSQL" },
     ],
+    code: "https://github.com/MarioMilosevic/GameVerse",
+    liveDemo: "https://game-verse-sigma.vercel.app/",
+  },
+  {
+    mainIcon: FaGamepad,
+    createdAt: "April 2025",
+    title: "GameVerse game store for some of my favorite video games",
+    description:
+      "GameVerse is a full-stack app built with Vue 3, Express.js, and PostgreSQL. It features 9 games, user accounts with JWT-based auth, and the ability to leave ratings (1–10) and comments. The UI, styled with Tailwind CSS, supports dark mode and is fully responsive. Users can update their profiles, and an admin dashboard provides user management tools. The frontend uses Zod for validation, and the backend returns clear response messages. User preferences and JWTs are stored in localStorage. Hosted on Render.",
+    imagePath: "/images/projects/gameVerseImg.PNG",
+    projectIcons: [
+      { icon: FaVuejs, text: "Vue.js" },
+      { icon: SiExpress, text: "Express.js" },
+      { icon: SiPostgresql, text: "PostgreSQL" },
+    ],
+    code: "https://github.com/MarioMilosevic/GameVerse",
+    liveDemo: "https://game-verse-sigma.vercel.app/",
   },
 ];

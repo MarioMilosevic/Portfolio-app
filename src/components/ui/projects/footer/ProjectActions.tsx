@@ -1,13 +1,19 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import ProjectAction from "@/components/ui/projects/footer/ProjectAction";
-const ProjectActions = () => {
+
+type ProjectActionsType = {
+  code: string;
+  liveDemo: string;
+};
+
+const ProjectActions = ({ code, liveDemo }: ProjectActionsType) => {
   return (
     <div className="flex gap-4 items-center">
-      <ProjectAction>
+      <ProjectAction path={code}>
         <span>Code</span>
         <FaGithub />
       </ProjectAction>
-      <ProjectAction>
+      <ProjectAction path={liveDemo}>
         <span>Live demo</span>
         <FaExternalLinkAlt />
       </ProjectAction>

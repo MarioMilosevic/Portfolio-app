@@ -20,29 +20,34 @@ const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     return (
       <Section id="projects" ref={ref} className="flex flex-col gap-2">
         <Subtitle>Freetime Projects</Subtitle>
-        {personalProjects.map((project) => (
-          <Project key={project.title}>
-            <ProjectHeader>
-              <ProjectTitleWrapper>
-                {<project.mainIcon />}
-                <ProjectTitle>{project.title}</ProjectTitle>
-              </ProjectTitleWrapper>
-              <ProjectDateCreated>{project.createdAt}</ProjectDateCreated>
-            </ProjectHeader>
-            <ProjectMain>
-              <ProjectDescription>{project.description}</ProjectDescription>
-              <ProjectImage path={project.imagePath} />
-            </ProjectMain>
-            <ProjectFooter>
-              <ProjectTechnologies iconObj={project.projectIcons} />
-              <ProjectActions/>
-            </ProjectFooter>
-          </Project>
-        ))}
+        {personalProjects.map((project, index) => {
+          const isEven = index % 2 === 0;
+          return (
+            <Project key={index}>
+              <ProjectHeader isEven={isEven}>
+                <ProjectTitleWrapper>
+                  {<project.mainIcon />}
+                  <ProjectTitle>{project.title}</ProjectTitle>
+                </ProjectTitleWrapper>
+                <ProjectDateCreated>{project.createdAt}</ProjectDateCreated>
+              </ProjectHeader>
+              <ProjectMain isEven={isEven}>
+                <ProjectDescription>{project.description}</ProjectDescription>
+                <ProjectImage path={project.imagePath} />
+              </ProjectMain>
+              <ProjectFooter isEven={isEven}>
+                <ProjectTechnologies iconObj={project.projectIcons} />
+                <ProjectActions
+                  code={project.code}
+                  liveDemo={project.liveDemo}
+                />
+              </ProjectFooter>
+            </Project>
+          );
+        })}
       </Section>
     );
   }
 );
-// da napravim objekte, i da svaki objekat ima allign, ili order nesto tako, na osnovu cega cu da ih namjestam
 
 export default Projects;
