@@ -13,6 +13,7 @@ import ProjectTechnologies from "@/components/ui/projects/footer/ProjectTechnolo
 
 import { forwardRef } from "react";
 import { personalProjects } from "@/lib/constants";
+import ProjectActions from "./footer/ProjectActions";
 
 const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
@@ -34,6 +35,7 @@ const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
             </ProjectMain>
             <ProjectFooter>
               <ProjectTechnologies iconObj={project.projectIcons} />
+              <ProjectActions/>
             </ProjectFooter>
           </Project>
         ))}
