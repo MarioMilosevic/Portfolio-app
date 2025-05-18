@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 type ScrollDownIndicatorProps = {
   onScroll: () => void;
@@ -7,19 +7,26 @@ type ScrollDownIndicatorProps = {
 const ScrollDownIndicator = ({ onScroll }: ScrollDownIndicatorProps) => {
   return (
     <button
-      className="w-8 h-16 border-2 border-white rounded-3xl z-20 flex justify-center items-start absolute bottom-8 right-1/2 translate-x-1/2 cursor-pointer"
+      className="z-20 absolute bottom-10 right-1/2 translate-x-1/2 cursor-pointer flex flex-col items-center gap-1 hover:-translate-y-1 duration-200 transition-all"
       onClick={onScroll}
+      aria-label="Scroll down"
     >
-      <motion.div
-        className="w-2 h-2 rounded-full bg-[#99aab5] absolute"
-        initial={{ bottom: "80%", opacity: 1 }}
-        animate={{ bottom: "20%", opacity: 0 }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+      <span>SCROLL</span>
+      {[0, 0.2, 0.4].map((delay, index) => (
+        <motion.div
+          key={index}
+          initial={{ y: 0, opacity: 0 }}
+          animate={{ y: 6, opacity: 1 }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay,
+          }}
+        >
+          <div className="w-3 h-3 border-b border-r border-white rotate-45" />
+        </motion.div>
+      ))}
     </button>
   );
 };
