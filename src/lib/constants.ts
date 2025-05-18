@@ -1,6 +1,24 @@
-import { FaGamepad, FaVuejs, FaChair, FaReact } from "react-icons/fa";
-import { SiExpress, SiPostgresql, SiTailwindcss, SiRedux } from "react-icons/si";
-import { ProjectType } from "./globalTypes";
+import {
+  FaGamepad,
+  FaVuejs,
+  FaChair,
+  FaReact,
+  FaLightbulb,
+  FaSass,
+} from "react-icons/fa";
+import {
+  SiExpress,
+  SiPostgresql,
+  SiTailwindcss,
+  SiRedux,
+  SiCloudinary,
+  SiSupabase,
+} from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { BiSolidMoviePlay } from "react-icons/bi";
+import { MdDashboard } from "react-icons/md";
+import { ProjectType } from "@/lib/globalTypes";
+
 export const navigationLinks = [
   "HOME",
   "ABOUT",
@@ -41,5 +59,54 @@ export const personalProjects: ProjectType[] = [
     ],
     code: "https://github.com/MarioMilosevic/x-shoppers-dream-e-commerce",
     liveDemo: "https://x-shoppers-dream-e-commerce.vercel.app/",
+  },
+  {
+    mainIcon: FaLightbulb,
+    createdAt: "December 2024",
+    title: "Product Feedback - app designed for managing feedbacks.",
+    description:
+      "Developed a full-stack feedback application using Vue 3 on the frontend and Supabase as the backend and database. Integrated Cloudinary API for image uploads and implemented infinite scrolling with data fetching on scroll. Featrues include server-side filtering and sorting, like (upvote) functionality. Utilized SASS for organized styling and Zod for schema-based form validation",
+    imagePath: "/images/projects/product-feedback.PNG",
+    projectIcons: [
+      { icon: FaVuejs, text: "Vue.js" },
+      { icon: SiCloudinary, text: "Cloudinary" },
+      { icon: SiSupabase, text: "Supabase" },
+      { icon: FaSass, text: "Sass" },
+    ],
+    code: "https://github.com/MarioMilosevic/x-shoppers-dream-e-commerce",
+    liveDemo: "https://x-shoppers-dream-e-commerce.vercel.app/",
+  },
+  {
+    mainIcon: BiSolidMoviePlay,
+    createdAt: "July 2024",
+    title: "Cinema 100 - IMDB and Netflix inspired movie application.",
+    description:
+      "Cinema 100 is a React application where you can browse through 100 movies, view detailed information, and watch trailers. You can also bookmark your favorite movies and access them later. The app utilizes Firebase for authentication, database storage, and other backend services.",
+    imagePath: "/images/projects/cinema-100.PNG",
+    projectIcons: [
+      { icon: FaReact, text: "React.js" },
+      { icon: SiRedux, text: "Redux Toolkit" },
+      { icon: IoLogoFirebase, text: "Firebase" },
+      { icon: SiTailwindcss, text: "TailwindCSS" },
+    ],
+    code: "https://github.com/MarioMilosevic/Cinema-100",
+    liveDemo: "https://cinema-100.vercel.app/",
+  },
+  {
+    mainIcon: MdDashboard,
+    createdAt: "February 2025",
+    title: "Employee Manager - Admin Dashboard",
+    description:
+      "Developed a full-stack employee management system using Vue 3, Express.js, and PostgreSQL. Implemented JWT-based authentication with persistent user sessions via localStorage. Features include user registration, login, and full CRUD functionality for managing employees, along with an admin dashboard for managing user roles and permissions. The frontend, styled with Sass, is fully responsive and utilizes Zod for robust form validation. The backend delivers clear, structured response messages. Hosted on render.",
+
+    imagePath: "/images/projects/employee-manager.PNG",
+    projectIcons: [
+      { icon: FaVuejs, text: "Vue.js" },
+      { icon: SiExpress, text: "Express.js" },
+      { icon: FaSass, text: "Sass" },
+      { icon: SiPostgresql, text: "PostgreSQL" },
+    ],
+    code: "https://github.com/MarioMilosevic/Employee-Manager",
+    liveDemo: "https://employee-manager-ashy.vercel.app/",
   },
 ];
