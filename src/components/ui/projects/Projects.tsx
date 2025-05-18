@@ -12,64 +12,31 @@ import ProjectFooter from "@/components/ui/projects/footer/ProjectFooter";
 import ProjectTechnologies from "@/components/ui/projects/footer/ProjectTechnologies";
 
 import { forwardRef } from "react";
-import { FaGamepad, FaVuejs } from "react-icons/fa";
-import { SiExpress, SiVuedotjs, SiPostgresql } from "react-icons/si";
+import { personalProjects } from "@/lib/constants";
 
 const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
-    const iconObjects = [
-      {
-        icon: FaVuejs,
-        text: "Vue.js",
-      },
-      {
-        icon: SiExpress,
-        text: "Express.js",
-      },
-      {
-        icon: SiPostgresql,
-        text: "PostgreSQL",
-      },
-    ];
-
     return (
       <Section id="projects" ref={ref} className="flex flex-col gap-2">
         <Subtitle>Freetime Projects</Subtitle>
-        <Project>
-          <ProjectHeader>
-            <ProjectTitleWrapper>
-              <FaGamepad size={25} />
-              <ProjectTitle>
-                GameVerse - game store for some of my favorite video games
-              </ProjectTitle>
-            </ProjectTitleWrapper>
-            <ProjectDateCreated>April 2025</ProjectDateCreated>
-          </ProjectHeader>
-
-          <ProjectMain>
-            <ProjectDescription>
-              GameVerse is a full-stack application with a responsive design,
-              built with Vue 3 on the frontend and Express.js on the backend,
-              using a PostgreSQL database to store data. The app features a
-              collection of 9 games, and users can create an account to leave
-              reviews (rated 1–10) and comments for each game. Zod is used on
-              the frontend for form validation, while the backend returns
-              appropriate response messages for each request. After signing up,
-              users must log in, at which point a JWT is generated on the
-              server, sent to the client, and stored in localStorage. The UI is
-              styled with Tailwind CSS and includes a dark mode feature, with
-              the selected theme also stored in localStorage to persist user
-              preferences. Users can update their profile information, including
-              their name, email, and profile image. The app also includes a
-              dedicated admin dashboard for user management, accessible only to
-              admin users. The project is hosted on Render.
-            </ProjectDescription>
-            <ProjectImage path="/images/projects/gameVerseImg.PNG" />
-          </ProjectMain>
-          <ProjectFooter>
-            <ProjectTechnologies iconObj={iconObjects} />
-          </ProjectFooter>
-        </Project>
+        {personalProjects.map((project) => (
+          <Project key={project.title}>
+            <ProjectHeader>
+              <ProjectTitleWrapper>
+                {<project.mainIcon />}
+                <ProjectTitle>{project.title}</ProjectTitle>
+              </ProjectTitleWrapper>
+              <ProjectDateCreated>{project.createdAt}</ProjectDateCreated>
+            </ProjectHeader>
+            <ProjectMain>
+              <ProjectDescription>{project.description}</ProjectDescription>
+              <ProjectImage path={project.imagePath} />
+            </ProjectMain>
+            <ProjectFooter>
+              <ProjectTechnologies iconObj={project.projectIcons} />
+            </ProjectFooter>
+          </Project>
+        ))}
       </Section>
     );
   }

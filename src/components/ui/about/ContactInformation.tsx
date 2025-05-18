@@ -6,7 +6,6 @@ import {
   FaPhone,
   FaGithub,
   FaLinkedin,
-  FaInstagram,
 } from "react-icons/fa";
 
 const ContactInformation = () => {
@@ -36,10 +35,6 @@ const ContactInformation = () => {
       <Contact path="https://www.linkedin.com/in/mario-milosevic/">
         <FaLinkedin />
         <p>@mariomilosevic</p>
-      </Contact>
-      <Contact path="https://www.instagram.com/buff_brain/">
-        <FaInstagram />
-        <p>@buffbrain</p>
       </Contact>
     </div>
   );
