@@ -14,8 +14,8 @@ const Navigation = ({ activeLink, setActiveLink }: NavigationProps) => {
   };
 
   return (
-    <nav className="navbar bg-neutral text-primary-content flex justify-center fixed z-30 top-0 left-0 w-full">
-      <ul className="flex gap-1">
+    <nav className="navbar bg-neutral text-primary-content flex sticky z-30 top-0 left-0">
+      <ul className="flex absolute bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2">
         {navigationLinks.map((link, index) => (
           <NavigationButton
             key={index}
