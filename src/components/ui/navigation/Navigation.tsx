@@ -1,6 +1,5 @@
-import { navigationLinks } from "@/lib/constants";
-// import { useState } from "react";
 import NavigationButton from "@/components/ui/navigation/NavigationButton";
+import { navigationLinks } from "@/lib/constants";
 import { scrollToSection } from "@/lib/utils";
 
 type NavigationProps = {
@@ -11,7 +10,7 @@ type NavigationProps = {
 const Navigation = ({ activeLink, setActiveLink }: NavigationProps) => {
   const navigationButtonHandler = (index: number, id: string) => {
     setActiveLink(index);
-    scrollToSection(id.toLowerCase());
+    scrollToSection(id);
   };
 
   return (

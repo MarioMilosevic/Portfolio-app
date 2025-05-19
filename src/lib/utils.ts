@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function scrollToSection(id: string, offset = 50) {
-  const section = document.getElementById(`${id}`);
+  const section = document.getElementById(`${id.toLowerCase()}`);
   if (!section) return;
   const y = section.getBoundingClientRect().top + window.pageYOffset - offset;
   window.scrollTo({ top: y, behavior: "smooth" });
