@@ -1,5 +1,5 @@
 import { IconObjType } from "@/lib/globalTypes";
-import ProjectTechnologyIcon from "@/components/ui/projects/footer/ProjectTechnologyIcon";
+import TechnologyIcon from "@/components/ui/others/TechnologyIcon";
 
 type ProjectTechnologiesProps = {
   iconObj: IconObjType[];
@@ -9,7 +9,7 @@ const ProjectTechnologies = ({ iconObj }: ProjectTechnologiesProps) => {
   return (
     <div className="flex items-center gap-4">
       {iconObj.map((iconObj) => (
-        <ProjectTechnologyIcon key={iconObj.text} iconObj={iconObj} />
+        <TechnologyIcon key={iconObj.text} iconObj={iconObj} />
       ))}
     </div>
   );

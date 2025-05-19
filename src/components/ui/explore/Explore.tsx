@@ -1,7 +1,7 @@
 import Section from "@/components/ui/others/Section";
 import Subtitle from "@/components/ui/others/Subtitle";
+import TechnologyIcon from "@/components/ui/others/TechnologyIcon";
 import { mySkills } from "@/lib/constants";
-import ProjectTechnologyIcon from "../projects/footer/ProjectTechnologyIcon";
 import { forwardRef } from "react";
 
 const Explore = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
@@ -9,9 +9,13 @@ const Explore = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     return (
       <Section id="explore" ref={ref}>
         <Subtitle>My Skills</Subtitle>
-        <div className="flex items-center justify-between">
+        <div className="grid grid-cols-8 gap-4">
           {mySkills.map((skill) => (
-            <ProjectTechnologyIcon key={skill.text} iconObj={skill} />
+            <TechnologyIcon
+              key={skill.text}
+              iconObj={skill}
+              size="medium"
+            />
           ))}
         </div>
       </Section>
