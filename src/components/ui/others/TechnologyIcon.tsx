@@ -4,7 +4,7 @@ type Size = "small" | "medium" | "big";
 
 const TechnologyIcon = ({
   iconObj,
-  size = "small", 
+  size = "small" 
 }: {
   iconObj: IconObjType;
   size?: Size;
@@ -12,7 +12,7 @@ const TechnologyIcon = ({
   const { text, icon: Icon } = iconObj;
 
   const iconSize = {
-    small: "px-3 py-1.5, text-xs",
+    small: "px-4 py-2, text-sm",
     medium: "px-4 py-2 text-base",
     big: "px-6 py-3 text-lg",
   };
