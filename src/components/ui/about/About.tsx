@@ -9,7 +9,7 @@ const About = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     return (
       <Section id="about" ref={ref}>
         <Subtitle>About me</Subtitle>
-        <div className="flex py-4">
+        <div className="flex">
           <ContactInformation />
           <Description />
         </div>

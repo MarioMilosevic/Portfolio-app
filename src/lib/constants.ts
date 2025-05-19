@@ -6,6 +6,10 @@ import {
   FaLightbulb,
   FaSass,
   FaBed,
+  FaHtml5,
+  FaCss3,
+  FaNodeJs,
+  FaGit
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -15,7 +19,9 @@ import {
   SiCloudinary,
   SiSupabase,
   SiTypescript,
+  SiJavascript,
 } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { BiSolidMoviePlay } from "react-icons/bi";
 import { MdDashboard } from "react-icons/md";
@@ -36,7 +42,7 @@ export const personalProjects: ProjectType[] = [
     createdAt: "April 2025",
     title: "GameVerse - game store for some of my favorite video games",
     description:
-      "GameVerse is a full-stack app built with Vue 3, Express.js, and PostgreSQL. It features 9 games, user accounts with JWT-based auth, and the ability to leave ratings (1–10) and comments. The UI, styled with Tailwind CSS, supports dark mode and is fully responsive. Users can update their profiles, and an admin dashboard provides user management tools. The frontend uses Zod for validation, and the backend returns clear response messages. User preferences and JWTs are stored in localStorage. Hosted on Render.",
+      "GameVerse is a full-stack app built with Vue 3, Express.js, and PostgreSQL. It features 9 games, user accounts with JWT-based auth, the ability to leave ratings (1–10) and comments. The UI, styled with Tailwind CSS, supports dark mode and is fully responsive. Users can update their profiles, and an admin dashboard provides user management tools. The frontend uses Zod for validation, and the backend returns clear response messages. User preferences and JWTs are stored in localStorage. Hosted on Render.",
     imagePath: "/images/projects/gameVerseImg.PNG",
     projectIcons: [
       { icon: FaVuejs, text: "Vue.js" },
@@ -69,7 +75,7 @@ export const personalProjects: ProjectType[] = [
     createdAt: "December 2024",
     title: "Product Feedback - app designed for managing feedbacks.",
     description:
-      "Developed a full-stack feedback application using Vue 3 on the frontend and Supabase as the backend and database. Integrated Cloudinary API for image uploads and implemented infinite scrolling with data fetching on scroll. Featrues include server-side filtering and sorting, like (upvote) functionality. Utilized SASS for organized styling and Zod for schema-based form validation",
+      "Developed a full-stack feedback application using Vue 3 on the frontend and Supabase as the backend and database. Integrated Cloudinary API for image uploads and implemented infinite scrolling with data fetching on scroll. Features include server-side filtering and sorting, like (upvote) functionality. Utilized SASS for organized styling and Zod for schema-based form validation",
     imagePath: "/images/projects/product-feedback.PNG",
     projectIcons: [
       { icon: FaVuejs, text: "Vue.js" },
@@ -133,4 +139,20 @@ export const personalProjects: ProjectType[] = [
     code: "https://github.com/MarioMilosevic/CityLane-Rooms",
     liveDemo: "https://city-lane-rooms.vercel.app/",
   },
+];
+
+export const mySkills = [
+  { icon: FaReact, text: "React.js" },
+  {icon:RiNextjsFill, text:"Next.js"},
+  { icon: FaVuejs, text: "Vue.js" },
+  { icon: SiTypescript, text: "TypeScript" },
+  { icon: SiJavascript, text: "JavaScript" },
+  { icon: FaNodeJs, text: "Node.js" },
+  {icon:SiExpress, text:"Express.js"},
+  { icon: SiSupabase, text: "Supabase" },
+  { icon: FaHtml5, text: 'HTML5' },
+  {icon:FaCss3, text:"CSS3"},
+  { icon: SiTailwindcss, text: "TailwindCSS" },
+  { icon: FaSass, text: "Sass" },
+  {icon:FaGit, text:"Git"}
 ];

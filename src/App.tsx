@@ -4,7 +4,7 @@ import About from "@/components/ui/about/About";
 import Experience from "@/components/ui/experience/Experience";
 import Projects from "@/components/ui/projects/Projects";
 import Recommendations from "@/components/ui/recommendations/Recommendations";
-
+import Explore from "@/components/ui/explore/Explore";
 import { useRef } from "react";
 import { useScrollSpy } from "./hooks/useScrollSpy";
 
@@ -14,9 +14,17 @@ function App() {
   const experienceRef = useRef<HTMLElement | null>(null);
   const projectsRef = useRef<HTMLElement | null>(null);
   const recommendationsRef = useRef<HTMLElement | null>(null);
+  const exploreRef = useRef<HTMLElement | null>(null);
 
   const { activeIndex, setActiveIndex } = useScrollSpy({
-    sectionRefs: [heroRef, aboutRef, experienceRef, projectsRef],
+    sectionRefs: [
+      heroRef,
+      aboutRef,
+      experienceRef,
+      projectsRef,
+      recommendationsRef,
+      exploreRef,
+    ],
     offset: 0,
   });
 
@@ -28,6 +36,7 @@ function App() {
       <Experience ref={experienceRef} />
       <Projects ref={projectsRef} />
       <Recommendations ref={recommendationsRef} />
+      <Explore ref={exploreRef } />
     </>
   );
 }

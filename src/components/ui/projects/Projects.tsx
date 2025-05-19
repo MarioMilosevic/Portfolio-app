@@ -10,10 +10,10 @@ import ProjectDescription from "@/components/ui/projects/main/ProjectDescription
 import ProjectImage from "@/components/ui/projects/main/ProjectImage";
 import ProjectFooter from "@/components/ui/projects/footer/ProjectFooter";
 import ProjectTechnologies from "@/components/ui/projects/footer/ProjectTechnologies";
+import ProjectActions from "@/components/ui/projects/footer/ProjectActions";
 
 import { forwardRef } from "react";
 import { personalProjects } from "@/lib/constants";
-import ProjectActions from "./footer/ProjectActions";
 
 const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
