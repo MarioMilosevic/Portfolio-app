@@ -9,7 +9,7 @@ import {
   FaHtml5,
   FaCss3,
   FaNodeJs,
-  FaGit
+  FaGitAlt
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -154,5 +154,5 @@ export const mySkills = [
   {icon:FaCss3, text:"CSS3"},
   { icon: SiTailwindcss, text: "TailwindCSS" },
   { icon: FaSass, text: "Sass" },
-  {icon:FaGit, text:"Git"}
+  {icon:FaGitAlt, text:"Git"}
 ];
