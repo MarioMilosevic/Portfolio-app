@@ -1,4 +1,14 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: light --default, dark --prefersdark, night;
+  themes: light --default, dark --prefersdark, night;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.invisible {
+  opacity: 0;
+  transform: translateY(10rem);
 }

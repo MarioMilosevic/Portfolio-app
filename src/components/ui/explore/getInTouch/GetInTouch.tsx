@@ -6,7 +6,9 @@ const GetInTouch = () => {
         className="textarea w-full"
         placeholder="Your message..."
       ></textarea>
-      <button className="btn btn-outline">Send</button>
+      <button className="btn btn-outline hover:border hover:border-slate-100">
+        Send
+      </button>
     </div>
   );
 };

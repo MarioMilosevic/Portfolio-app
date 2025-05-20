@@ -7,7 +7,7 @@ const Recommendations = forwardRef<
   React.HTMLAttributes<HTMLElement>
 >((_, ref) => {
     return <Section id="recommendations" ref={ref}>
-      <Subtitle>Reccomendations</Subtitle>
+      <Subtitle>Recommendations</Subtitle>
   </Section>;
 });
 

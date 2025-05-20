@@ -14,11 +14,17 @@ import ProjectActions from "@/components/ui/projects/footer/ProjectActions";
 
 import { forwardRef } from "react";
 import { personalProjects } from "@/lib/constants";
+import { useIntersecting } from "@/hooks/useIntersecting";
 
 const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
+    useIntersecting(ref);
     return (
-      <Section id="projects" ref={ref} className="flex flex-col gap-2">
+      <Section
+        id="projects"
+        ref={ref}
+        className="flex flex-col gap-2 invisible transition-all duration-1000"
+      >
         <Subtitle>Freetime Projects</Subtitle>
         {personalProjects.map((project, index) => {
           const isEven = index % 2 === 0;

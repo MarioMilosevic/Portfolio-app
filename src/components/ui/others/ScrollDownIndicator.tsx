@@ -7,7 +7,7 @@ type ScrollDownIndicatorProps = {
 const ScrollDownIndicator = ({ onScroll }: ScrollDownIndicatorProps) => {
   return (
     <button
-      className="z-20 absolute bottom-10 right-1/2 translate-x-1/2 cursor-pointer flex flex-col items-center gap-1 hover:-translate-y-1 duration-200 transition-all"
+      className="z-20 absolute bottom-8 right-1/2 translate-x-1/2 cursor-pointer flex flex-col items-center gap-1 hover:-translate-y-1 duration-200 transition-all"
       onClick={onScroll}
       aria-label="Scroll down"
     >
