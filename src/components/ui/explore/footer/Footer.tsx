@@ -11,16 +11,17 @@ const Footer = () => {
         <a className="link link-hover" onClick={() => scrollToSection('explore')} >Explore</a>
       </nav>
       <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <h6 className="footer-title">Social media</h6>
+        <h6 className="footer-title">Contact</h6>
+        <a className="link link-hover">Email me</a>
         <a className="link link-hover">Linkedin</a>
         <a className="link link-hover">GitHub</a>
+        <a className="link link-hover">Resume</a>
+      </nav>
+      <nav>
+        <h6 className="footer-title">Explore</h6>
+        <a className="link link-hover">GameVerse</a>
+        <a className="link link-hover">X-shoppers</a>
+        <a className="link link-hover">Back to top</a>
       </nav>
     </footer>
   );
