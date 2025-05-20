@@ -23,7 +23,7 @@ const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
       <Section
         id="projects"
         ref={ref}
-        className="flex flex-col gap-2 invisible transition-all duration-1000"
+        className="flex flex-col gap-2 invisible"
       >
         <Subtitle>Freetime Projects</Subtitle>
         {personalProjects.map((project, index) => {

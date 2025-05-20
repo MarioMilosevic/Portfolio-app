@@ -13,7 +13,10 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
       <section
         id={id}
         ref={ref}
-        className={cn("pt-12 pb-12 max-w-[1280px] mx-auto ", className)}
+        className={cn(
+          "pt-12 pb-12 max-w-[1280px] mx-auto transition-all duration-1000",
+          className
+        )}
       >
         {children}
       </section>

@@ -1,9 +1,12 @@
 import Subtitle from "@/components/ui/others/Subtitle";
 import Section from "@/components/ui/others/Section";
 import { memo, forwardRef } from "react";
+import { useIntersecting } from "@/hooks/useIntersecting";
+
 
 const Experience = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
+    useIntersecting(ref)
     return (
       <Section id="experience" ref={ref} >
         <Subtitle>Experience</Subtitle>

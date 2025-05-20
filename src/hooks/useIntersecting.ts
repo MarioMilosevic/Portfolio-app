@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { RefObject } from "react";
 
-export const useIntersecting = (ref: RefObject<HTMLDivElement>) => {
+export const useIntersecting = (ref: RefObject<HTMLDivElement | null>) => {
   useEffect(() => {
     if (ref?.current) {
       const observer = new IntersectionObserver(
