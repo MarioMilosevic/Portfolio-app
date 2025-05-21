@@ -12,13 +12,13 @@ import ProjectFooter from "@/components/ui/projects/footer/ProjectFooter";
 import ProjectTechnologies from "@/components/ui/projects/footer/ProjectTechnologies";
 import ProjectActions from "@/components/ui/projects/footer/ProjectActions";
 
-import { forwardRef } from "react";
+import { forwardRef, RefObject } from "react";
 import { personalProjects } from "@/lib/constants";
 import { useIntersecting } from "@/hooks/useIntersecting";
 
 const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
-    useIntersecting(ref);
+    useIntersecting(ref as RefObject<HTMLDivElement>);
     return (
       <Section
         id="projects"
