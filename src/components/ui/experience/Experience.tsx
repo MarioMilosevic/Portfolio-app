@@ -2,6 +2,7 @@ import Subtitle from "@/components/ui/others/Subtitle";
 import Section from "@/components/ui/others/Section";
 import { memo, forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
+import dejan from "/images/dejan.jpeg"
 
 const Experience = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
@@ -9,7 +10,12 @@ const Experience = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     return (
       <Section id="experience" ref={ref} className="invisible">
         <Subtitle>Experience</Subtitle>
-        <div className="h-[500px]"></div>
+        <div className="avatar">
+          <div className="w-20 rounded">
+            <img src={dejan} alt={dejan} className="object-cover" />
+          </div>
+          {/* Lead Software Engineer-Java */}
+        </div>
       </Section>
     );
   }

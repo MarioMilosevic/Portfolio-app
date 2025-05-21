@@ -9,7 +9,7 @@ import {
   FaHtml5,
   FaCss3,
   FaNodeJs,
-  FaGitAlt
+  FaGitAlt,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -25,7 +25,11 @@ import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { BiSolidMoviePlay } from "react-icons/bi";
 import { MdDashboard } from "react-icons/md";
-import { ProjectType } from "@/lib/globalTypes";
+import { ProjectType, RecommendationType } from "@/lib/globalTypes";
+import dejan from "/images/dejan.jpeg";
+import nemanja from "/images/nemanja.jpg";
+import drazen from "/images/drazen.jpg";
+import ilhan from "/images/ilhan.jpg";
 
 export const navigationLinks = [
   "HOME",
@@ -143,17 +147,60 @@ export const personalProjects: ProjectType[] = [
 
 export const mySkills = [
   { icon: FaReact, text: "React.js" },
-  {icon:RiNextjsFill, text:"Next.js"},
+  { icon: RiNextjsFill, text: "Next.js" },
   { icon: FaVuejs, text: "Vue.js" },
   { icon: SiTypescript, text: "TypeScript" },
   { icon: SiJavascript, text: "JavaScript" },
   { icon: FaNodeJs, text: "Node.js" },
-  { icon: SiExpress, text: "Express.js" }, 
-  {icon:SiRedux, text:"Redux"},
+  { icon: SiExpress, text: "Express.js" },
+  { icon: SiRedux, text: "Redux" },
   { icon: SiSupabase, text: "Supabase" },
-  { icon: FaHtml5, text: 'HTML5' },
-  {icon:FaCss3, text:"CSS3"},
+  { icon: FaHtml5, text: "HTML5" },
+  { icon: FaCss3, text: "CSS3" },
   { icon: SiTailwindcss, text: "TailwindCSS" },
   { icon: FaSass, text: "Sass" },
-  {icon:FaGitAlt, text:"Git"}
+  { icon: FaGitAlt, text: "Git" },
+];
+
+export const recommendations: RecommendationType[] = [
+  {
+    name: "Nemanja",
+    lastName: "Malesija",
+    image: nemanja,
+    role: "Frontend Developer",
+    linkedin: "https://www.linkedin.com/in/nemanja-malesija/",
+    github: "https://github.com/nemanjamalesija",
+    instagram: "https://www.instagram.com/nemanja_malesija/",
+    text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
+  },
+  {
+    name: "Dejan",
+    lastName: "Bogićević",
+    image: dejan,
+    role: "Lead Software Engineer",
+    linkedin: "https://www.linkedin.com/in/dejan-bogi%C4%87evi%C4%87-66b47ba3/",
+    github: "",
+    instagram: "",
+    text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
+  },
+  {
+    name: "Dražen",
+    lastName: "Jelić",
+    image: drazen,
+    role: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/drazen-jelic-1a1b24238/",
+    github: "",
+    instagram: "https://www.instagram.com/drazen.jelic/",
+    text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
+  },
+  {
+    name: "Ilhan",
+    lastName: "Kalač",
+    image: ilhan,
+    role: "Software Developer",
+    linkedin: "https://www.linkedin.com/in/ilhankalac/",
+    github: "https://github.com/ilhankalac",
+    instagram: "https://www.instagram.com/vizija/",
+    text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
+  },
 ];

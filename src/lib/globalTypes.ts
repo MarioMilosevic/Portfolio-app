@@ -5,7 +5,6 @@ export type IconObjType = {
   text: string;
 };
 
-
 export type ProjectType = {
   mainIcon: IconType;
   createdAt: string;
@@ -15,4 +14,15 @@ export type ProjectType = {
   projectIcons: IconObjType[];
   code: string;
   liveDemo: string;
-}
+};
+
+export type RecommendationType = {
+  name: string;
+  lastName: string;
+  image: string;
+  role: string;
+  linkedin?: string;
+  github?: string;
+  instagram?: string;
+  text: string;
+};
