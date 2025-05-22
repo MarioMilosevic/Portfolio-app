@@ -17,8 +17,7 @@ export type ProjectType = {
 };
 
 export type RecommendationType = {
-  name: string;
-  lastName: string;
+  fullName: string;
   image: string;
   role: string;
   linkedin?: string;

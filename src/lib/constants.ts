@@ -164,8 +164,7 @@ export const mySkills = [
 
 export const recommendations: RecommendationType[] = [
   {
-    name: "Nemanja",
-    lastName: "Malesija",
+    fullName: "Nemanja Malesija",
     image: nemanja,
     role: "Frontend Developer",
     linkedin: "https://www.linkedin.com/in/nemanja-malesija/",
@@ -174,18 +173,16 @@ export const recommendations: RecommendationType[] = [
     text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
   },
   {
-    name: "Dejan",
-    lastName: "Bogićević",
+    fullName: "Dejan Bogićević",
     image: dejan,
     role: "Lead Software Engineer",
     linkedin: "https://www.linkedin.com/in/dejan-bogi%C4%87evi%C4%87-66b47ba3/",
     github: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/dbogi_89/",
     text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
   },
   {
-    name: "Dražen",
-    lastName: "Jelić",
+    fullName: "Dražen Jelić",
     image: drazen,
     role: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/drazen-jelic-1a1b24238/",
@@ -194,8 +191,7 @@ export const recommendations: RecommendationType[] = [
     text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
   },
   {
-    name: "Ilhan",
-    lastName: "Kalač",
+    fullName: "Ilhan Kalač",
     image: ilhan,
     role: "Software Developer",
     linkedin: "https://www.linkedin.com/in/ilhankalac/",
