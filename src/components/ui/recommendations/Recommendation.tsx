@@ -1,4 +1,5 @@
 import { RecommendationType } from "@/lib/globalTypes";
+import Icon from "@/components/ui/others/Icon";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 type RecommendationProps = {
@@ -25,9 +26,21 @@ const Recommendation = ({ recommendation }: RecommendationProps) => {
           </span>
         </div>
         <div className="flex gap-4">
-          {github && <FaGithub size={iconSize} />}
-          {linkedin && <FaLinkedin size={iconSize} />}
-          {instagram && <FaInstagram size={iconSize} />}
+          {github && (
+            <Icon size="small">
+              <FaGithub size={iconSize} />
+            </Icon>
+          )}
+          {linkedin && (
+            <Icon size="small">
+              <FaLinkedin size={iconSize} />
+            </Icon>
+          )}
+          {instagram && (
+            <Icon size="small">
+              <FaInstagram size={iconSize} />
+            </Icon>
+          )}
         </div>
       </div>
     </div>

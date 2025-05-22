@@ -1,9 +1,9 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { motion } from "motion/react";
-import HeroIcon from "@/components/ui/hero/HeroIcon";
+import Icon from "@/components/ui/others/Icon";
 import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "@/lib/utils";
+import { motion } from "motion/react";
 import { memo, forwardRef } from "react";
 
 const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
@@ -45,15 +45,15 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
                   transition={{ duration: 0.5, delay: 0.9 }}
                   className="flex gap-4 items-center"
                 >
-                  <HeroIcon path="https://github.com/MarioMilosevic">
+                  <Icon path="https://github.com/MarioMilosevic">
                     <FaGithub size={iconSize} color="white" />
-                  </HeroIcon>
-                  <HeroIcon path="https://www.linkedin.com/in/mario-milosevic/">
+                  </Icon>
+                  <Icon path="https://www.linkedin.com/in/mario-milosevic/">
                     <FaLinkedin size={iconSize} color="white" />
-                  </HeroIcon>
-                  <HeroIcon path="/">
+                  </Icon>
+                  <Icon path="/">
                     <p className="text-white text-lg">Resume</p>
-                  </HeroIcon>
+                  </Icon>
                 </motion.div>
               </div>
             </div>
