@@ -13,7 +13,8 @@ const Recommendation = ({ recommendation }: RecommendationProps) => {
   const iconSize = 22;
 
   return (
-    <div className="border pl-12 pr-8 py-4 min-h-[200px] flex flex-col gap-8">
+    <div className="relative border-l-4 pl-12 pr-8 py-4 min-h-[200px] flex flex-col gap-8">
+      <span className="absolute top-0 left-2 text-5xl">“</span>
       <p className="text-justify text-sm">{text}</p>
       <div className="flex justify-between items-end">
         <div className="avatar flex items-center gap-4">
@@ -27,17 +28,17 @@ const Recommendation = ({ recommendation }: RecommendationProps) => {
         </div>
         <div className="flex gap-4">
           {github && (
-            <Icon size="small">
+            <Icon size="small" path={github}>
               <FaGithub size={iconSize} />
             </Icon>
           )}
           {linkedin && (
-            <Icon size="small">
+            <Icon size="small" path={linkedin}>
               <FaLinkedin size={iconSize} />
             </Icon>
           )}
           {instagram && (
-            <Icon size="small">
+            <Icon size="small" path={instagram}>
               <FaInstagram size={iconSize} />
             </Icon>
           )}
