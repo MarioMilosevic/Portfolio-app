@@ -208,20 +208,38 @@ export const recommendations: RecommendationType[] = [
 export const experiences: ExperienceType[] = [
   {
     companyName: "Emasys",
-    webpage: "https://www.emasys.hr/",
     destination: "Zagreb Croatia",
     type: "Remote",
     job: "Frontend Developer",
     startDate: "Aug 2023",
     endDate: "Present",
+    about:
+      "At Emasys, I joined the team through a recommendation from a colleague at Devcor and have been working with them remotely. The company specializes in energy efficiency, providing solutions to optimize energy consumption.",
+    accomplishments: [
+      "Built responsive frontend interfaces for multiple client projects utilizing modern CSS techniques,",
+      "Integrated state management stores, optimizing application performance and reducing load time by 47%,",
+      "Participated in peer code reviews, providing feedback on best practices, which helped resolve 52% of production bugs improving code maintainabillity,",
+      "Mentored junior developers and established code review processes to enhance performance and meet bussiness goals, reducint production issues by 15%,",
+      "Collaborating effectively with the backend team utilizing Laravel,",
+      "Deploying code to QA environments to address bugs not detected locally, ensuring smoother product releases,",
+      "Maintaining high productivity during weekly development meetings.",
+    ],
   },
   {
     companyName: "Devcor",
-    webpage: "https://www.companywall.me/firma/devcor-doo/MM15P8HD",
     destination: "Podgorica Montenegro",
     type: "On-site",
     job: "Frontend Developer",
     startDate: "Oct 2021",
     endDate: "Jun 2023",
+    about:
+      "At Devcor, I had the opportunity to work on multiple projects for various clients. As an agency, we handled a diverse range of tasks using both Vue and React frameworks,",
+    accomplishments: [
+      "Utilized HTML CSS and JavaScript to crate 15+ responsive landing pages,",
+      "Successfully migrated legacy JavaScript codebases to React.js and Vue.js with TypeScript,",
+      "Participated in product releases and code reviews with senior developers and team leads,",
+      "Worked in a cross-functional team to receive and implement design requirements to build and enhance 10+ web applicatons,",
+      "Identified and implemented dynamic web solutions in accordance to company standards and best practices.",
+    ],
   },
 ];

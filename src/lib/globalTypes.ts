@@ -28,10 +28,11 @@ export type RecommendationType = {
 
 export type ExperienceType = {
   companyName: string;
-  webpage: string;
   destination: string;
+  about: string;
   type: "Hybrid" | "Remote" | "On-site";
   job: string;
   startDate: string;
   endDate: string;
+  accomplishments:string[]
 };

@@ -13,11 +13,9 @@ const Recommendations = forwardRef<
   return (
     <Section id="recommendations" ref={ref} className="invisible">
       <Subtitle>Recommendations</Subtitle>
-      <div className="flex flex-col gap-8 ">
       {recommendations.map((recommendation) => (
         <Recommendation recommendation={recommendation} />
       ))}
-      </div>
     </Section>
   );
 });

@@ -13,7 +13,7 @@ const Recommendation = ({ recommendation }: RecommendationProps) => {
   const iconSize = 22;
 
   return (
-    <div className="relative border-l-4 pl-12 pr-8 py-4 min-h-[200px] flex flex-col gap-8">
+    <div className="relative border-l-4 pl-12 pr-8 py-4 mb-12 min-h-[200px] flex flex-col gap-8">
       <span className="absolute top-0 left-2 text-5xl">“</span>
       <p className="text-justify text-sm">{text}</p>
       <div className="flex justify-between items-end">

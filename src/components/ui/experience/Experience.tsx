@@ -1,6 +1,7 @@
 import Subtitle from "@/components/ui/others/Subtitle";
 import Section from "@/components/ui/others/Section";
 import CompanyExperience from "@/components/ui/experience/CompanyExperience";
+import { experiences } from "@/lib/constants";
 import { memo, forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
 
@@ -10,7 +11,9 @@ const Experience = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     return (
       <Section id="experience" ref={ref} className="invisible">
         <Subtitle>Experience</Subtitle>
-        <CompanyExperience/>
+        {experiences.map((exp) => (
+          <CompanyExperience key={exp.companyName} exp={exp} />
+        ))}
       </Section>
     );
   }
