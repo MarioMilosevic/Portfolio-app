@@ -25,11 +25,15 @@ import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { BiSolidMoviePlay } from "react-icons/bi";
 import { MdDashboard } from "react-icons/md";
-import { ProjectType, RecommendationType } from "@/lib/globalTypes";
-import dejan from "/images/dejan.jpeg";
-import nemanja from "/images/nemanja.jpg";
-import drazen from "/images/drazen.jpg";
-import ilhan from "/images/ilhan.jpg";
+import {
+  ExperienceType,
+  ProjectType,
+  RecommendationType,
+} from "@/lib/globalTypes";
+import dejan from "/images/recommendations/dejan.jpeg";
+import nemanja from "/images/recommendations/nemanja.jpg";
+import drazen from "/images/recommendations/drazen.jpg";
+import ilhan from "/images/recommendations/ilhan.jpg";
 
 export const navigationLinks = [
   "HOME",
@@ -198,5 +202,26 @@ export const recommendations: RecommendationType[] = [
     github: "https://github.com/ilhankalac",
     instagram: "https://www.instagram.com/vizija/",
     text: "It is my pleasure to write this recommendation for my colleague, Ilhan, with whom I had the opportunity to collaborate on different projects during our studies. His professional approach, creativity, devotion and ability to quickly identify and resolve problems made him an indispensable member of our team. Ilhan’s ability to analyze complex issues in detail and propose effective solutions, sets him apart as a top software engineer. With over three years of proven professional experience, I highly recommend Ilhan as a software engineer for projects that require a high level of professionalism, expertise and commitment. I am confident that he will bring new value and contribute to the organization and development team he joins.",
+  },
+];
+
+export const experiences: ExperienceType[] = [
+  {
+    companyName: "Emasys",
+    webpage: "https://www.emasys.hr/",
+    destination: "Zagreb Croatia",
+    type: "Remote",
+    job: "Frontend Developer",
+    startDate: "Aug 2023",
+    endDate: "Present",
+  },
+  {
+    companyName: "Devcor",
+    webpage: "https://www.companywall.me/firma/devcor-doo/MM15P8HD",
+    destination: "Podgorica Montenegro",
+    type: "On-site",
+    job: "Frontend Developer",
+    startDate: "Oct 2021",
+    endDate: "Jun 2023",
   },
 ];

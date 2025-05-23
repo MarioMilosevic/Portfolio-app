@@ -1,5 +1,5 @@
-import { RecommendationType } from "@/lib/globalTypes";
 import Icon from "@/components/ui/others/Icon";
+import { RecommendationType } from "@/lib/globalTypes";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 type RecommendationProps = {

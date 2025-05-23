@@ -1,4 +1,4 @@
-import marioImage from "/images/Mario.jpg";
+import marioImage from "/images/me/mario.jpg";
 import Contact from "@/components/ui/about/Contact";
 import {
   FaMapMarkerAlt,

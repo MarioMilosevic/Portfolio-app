@@ -14,7 +14,7 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         <div
           className="hero min-h-screen relative"
           style={{
-            backgroundImage: `url(/images/background1.jpg)`,
+            backgroundImage: `url(/images/background/background1.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

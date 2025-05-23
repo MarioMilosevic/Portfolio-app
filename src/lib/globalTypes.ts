@@ -25,3 +25,13 @@ export type RecommendationType = {
   instagram?: string;
   text: string;
 };
+
+export type ExperienceType = {
+  companyName: string;
+  webpage: string;
+  destination: string;
+  type: "Hybrid" | "Remote" | "On-site";
+  job: string;
+  startDate: string;
+  endDate: string;
+};

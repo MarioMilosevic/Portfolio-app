@@ -1,5 +1,6 @@
 import Subtitle from "@/components/ui/others/Subtitle";
 import Section from "@/components/ui/others/Section";
+import CompanyExperience from "@/components/ui/experience/CompanyExperience";
 import { memo, forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
 
@@ -9,6 +10,7 @@ const Experience = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     return (
       <Section id="experience" ref={ref} className="invisible">
         <Subtitle>Experience</Subtitle>
+        <CompanyExperience/>
       </Section>
     );
   }
