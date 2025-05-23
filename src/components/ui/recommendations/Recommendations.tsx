@@ -13,8 +13,8 @@ const Recommendations = forwardRef<
   return (
     <Section id="recommendations" ref={ref} className="invisible">
       <Subtitle>Recommendations</Subtitle>
-      {recommendations.map((recommendation) => (
-        <Recommendation recommendation={recommendation} />
+      {recommendations.map((recommendation, index) => (
+        <Recommendation key={index} recommendation={recommendation} />
       ))}
     </Section>
   );

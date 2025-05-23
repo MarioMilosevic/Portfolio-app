@@ -12,7 +12,7 @@ const TechnologyIcon = ({
   const { text, icon: Icon } = iconObj;
 
   const iconSize = {
-    small: "px-4 py-2, text-sm",
+    small: "px-4 py-2 text-sm",
     medium: "px-4 py-2 text-base",
     big: "px-6 py-3 text-lg",
   };

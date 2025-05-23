@@ -233,7 +233,7 @@ export const experiences: ExperienceType[] = [
     startDate: "Oct 2021",
     endDate: "Jun 2023",
     about:
-      "At Devcor, I had the opportunity to work on multiple projects for various clients. As an agency, we handled a diverse range of tasks using both Vue and React frameworks,",
+      "At Devcor, I had the opportunity to work on multiple projects for various clients. As an agency, we handled a diverse range of tasks using different solutions.",
     accomplishments: [
       "Utilized HTML CSS and JavaScript to crate 15+ responsive landing pages,",
       "Successfully migrated legacy JavaScript codebases to React.js and Vue.js with TypeScript,",
