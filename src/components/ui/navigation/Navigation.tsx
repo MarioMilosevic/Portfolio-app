@@ -2,6 +2,7 @@ import NavigationButton from "@/components/ui/navigation/NavigationButton";
 import { navigationLinks } from "@/lib/constants";
 import { scrollToSection } from "@/lib/utils";
 import { GiHamburgerMenu } from "react-icons/gi";
+import AnimatedHamburgerButton from "@/components/ui/navigation/AnimatedHamburgerButton";
 
 type NavigationProps = {
   activeLink: number;
@@ -15,12 +16,13 @@ const Navigation = ({ activeLink, setActiveLink }: NavigationProps) => {
   };
 
   return (
-    <nav className="navbar bg-neutral text-primary-content flex absolute md:fixed z-30 top-0 left-0">
-      <GiHamburgerMenu
+    <nav className="navbar bg-neutral text-primary-content flex absolute md:fixed z-30 top-0 left-0 border">
+      <AnimatedHamburgerButton className="block border md:hidden absolute right-4 bottom-1/2 translate-y-1/2 cursor-pointer" />
+      {/* <GiHamburgerMenu
         size={20}
         color="white"
         className="block md:hidden absolute right-4 bottom-1/2 translate-y-1/2 cursor-pointer"
-      />
+      /> */}
       <ul className="hidden md:flex absolute bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2">
         {navigationLinks.map((link, index) => (
           <NavigationButton
