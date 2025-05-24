@@ -1,15 +1,17 @@
 import { motion, MotionConfig } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
 
 type AnimatedHamburgerButtonProps = {
-  className: string;
+    className: string;
+    open: boolean;
+    navigationHandler:() => void
 };
 
 const AnimatedHamburgerButton = ({
-  className,
+    className,
+    open,
+    navigationHandler
 }: AnimatedHamburgerButtonProps) => {
-  const [active, setActive] = useState<boolean>(false);
 
   return (
     <MotionConfig
@@ -20,11 +22,12 @@ const AnimatedHamburgerButton = ({
     >
       <motion.button
         className={cn(
-          "h-14 w-14 rounded-full bg-white/0 transition-colors hover:bg-white/20",
+          "h-12 w-8 rounded-full bg-white/0 transition-colors z-20",
           className
         )}
-        onClick={() => setActive((prev) => !prev)}
-        animate={active ? "open" : "closed"}
+        initial={false}
+        onClick={navigationHandler}
+        animate={open ? "open" : "closed"}
       >
         <motion.span
           style={{

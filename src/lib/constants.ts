@@ -36,12 +36,12 @@ import drazen from "/images/recommendations/drazen.jpg";
 import ilhan from "/images/recommendations/ilhan.jpg";
 
 export const navigationLinks = [
-  "HOME",
-  "ABOUT",
-  "EXPERIENCE",
-  "PROJECTS",
-  "RECOMMENDATIONS",
-  "EXPLORE",
+  "Home",
+  "About",
+  "Experience",
+  "Projects",
+  "Recommendations",
+  "Explore",
 ];
 
 export const personalProjects: ProjectType[] = [
