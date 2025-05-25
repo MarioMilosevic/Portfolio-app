@@ -1,7 +1,7 @@
-import Section from "@/components/ui/others/Section";
-import Subtitle from "@/components/ui/others/Subtitle";
-import ContactInformation from "@/components/ui/about/ContactInformation";
-import Description from "@/components/ui/about/Description";
+import Section from "@/components/others/Section";
+import Subtitle from "@/components/others/Subtitle";
+import ContactInformation from "@/components/about/ContactInformation";
+import Description from "@/components/about/Description";
 import { memo, forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
 

@@ -1,5 +1,5 @@
 import marioImage from "/images/me/mario.jpg";
-import Contact from "@/components/ui/about/Contact";
+import Contact from "@/components/about/Contact";
 import {
   FaMapMarkerAlt,
   FaEnvelope,

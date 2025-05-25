@@ -1,6 +1,6 @@
-import Icon from "@/components/ui/others/Icon";
-import Section from "@/components/ui/others/Section";
-import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
+import Icon from "@/components/others/Icon";
+import Section from "@/components/others/Section";
+import ScrollDownIndicator from "@/components/others/ScrollDownIndicator";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
     const iconSize = 25;
     return (
-      <Section id="home" className="max-w-full pt-0 px-0" ref={ref}>
+      <Section id="home" className="max-w-full pt-0 md:pt-0 px-0" ref={ref}>
         <div
           className="hero min-h-screen relative"
           style={{

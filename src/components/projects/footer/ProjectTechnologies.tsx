@@ -1,5 +1,5 @@
 import { IconObjType } from "@/lib/globalTypes";
-import TechnologyIcon from "@/components/ui/others/TechnologyIcon";
+import TechnologyIcon from "@/components/others/TechnologyIcon";
 
 type ProjectTechnologiesProps = {
   iconObj: IconObjType[];

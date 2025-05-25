@@ -1,6 +1,6 @@
-import Section from "@/components/ui/others/Section";
-import Subtitle from "@/components/ui/others/Subtitle";
-import Recommendation from "@/components/ui/recommendations/Recommendation";
+import Section from "@/components/others/Section";
+import Subtitle from "@/components/others/Subtitle";
+import Recommendation from "@/components/recommendations/Recommendation";
 import { forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
 import { recommendations } from "@/lib/constants";

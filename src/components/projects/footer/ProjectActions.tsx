@@ -1,5 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import ProjectAction from "@/components/ui/projects/footer/ProjectAction";
+import ProjectAction from "@/components/projects/footer/ProjectAction";
 
 type ProjectActionsType = {
   code: string;

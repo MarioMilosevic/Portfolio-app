@@ -1,4 +1,4 @@
-import TechnologyIcon from "@/components/ui/others/TechnologyIcon";
+import TechnologyIcon from "@/components/others/TechnologyIcon";
 import { mySkills } from "@/lib/constants";
 
 const Skills = () => {

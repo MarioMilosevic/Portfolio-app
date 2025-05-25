@@ -1,5 +1,5 @@
-import NavigationButton from "@/components/ui/navigation/NavigationButton";
-import AnimatedHamburgerButton from "@/components/ui/navigation/AnimatedHamburgerButton";
+import NavigationButton from "@/components/navigation/NavigationButton";
+import AnimatedHamburgerButton from "@/components/navigation/AnimatedHamburgerButton";
 import { navigationLinks } from "@/lib/constants";
 import { scrollToSection } from "@/lib/utils";
 import { useState } from "react";
@@ -28,9 +28,9 @@ const Navigation = ({ activeLink, setActiveLink }: NavigationProps) => {
         className="block md:hidden absolute right-4 bottom-1/2 translate-y-1/2 cursor-pointer"
       />
       <ul
-        className={`absolute origin-top bg-neutral md:origin-center w-full md:h-auto md:w-auto ${
+        className={`absolute origin-top md:origin-center bg-neutral w-full md:w-auto ${
           navigationOpen ? "scale-y-100" : "md:scale-y-100 scale-y-0"
-        } transition-all duration-300 top-16 md:top-0 flex flex-col left-0 pl-2 pb-12 gap-1 md:gap-0 md:p-0 md:flex-row md:bottom-1/2 md:translate-y-1/2 md:left-1/2 md:-translate-x-1/2`}
+        } transition-all duration-300 top-16 md:top-0 flex flex-col md:flex-row left-0 pl-2 pb-12 gap-1 md:gap-0 md:pb-0 md:pl-0 md:bottom-1/2 md:translate-y-1/2 md:left-1/2 md:-translate-x-1/2`}
       >
         {navigationLinks.map((link, index) => (
           <NavigationButton

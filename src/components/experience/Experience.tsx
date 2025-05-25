@@ -1,6 +1,6 @@
-import Subtitle from "@/components/ui/others/Subtitle";
-import Section from "@/components/ui/others/Section";
-import CompanyExperience from "@/components/ui/experience/CompanyExperience";
+import Subtitle from "@/components/others/Subtitle";
+import Section from "@/components/others/Section";
+import CompanyExperience from "@/components/experience/CompanyExperience";
 import { experiences } from "@/lib/constants";
 import { memo, forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";

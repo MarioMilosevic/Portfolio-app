@@ -1,10 +1,10 @@
-import Navigation from "@/components/ui/navigation/Navigation";
-import Hero from "@/components/ui/hero/Hero";
-import About from "@/components/ui/about/About";
-import Experience from "@/components/ui/experience/Experience";
-import Projects from "@/components/ui/projects/Projects";
-import Recommendations from "@/components/ui/recommendations/Recommendations";
-import Explore from "@/components/ui/explore/Explore";
+import Navigation from "@/components/navigation/Navigation";
+import Hero from "@/components/hero/Hero";
+import About from "@/components/about/About";
+import Experience from "@/components/experience/Experience";
+import Projects from "@/components/projects/Projects";
+import Recommendations from "@/components/recommendations/Recommendations";
+import Explore from "@/components/explore/Explore";
 import { useRef } from "react";
 import { useScrollSpy } from "./hooks/useScrollSpy";
 

@@ -1,8 +1,8 @@
-import Section from "@/components/ui/others/Section";
-import Subtitle from "@/components/ui/others/Subtitle";
-import Skills from "@/components/ui/explore/skills/Skills";
-import GetInTouch from "@/components/ui/explore/getInTouch/GetInTouch";
-import Footer from "@/components/ui/explore/footer/Footer";
+import Section from "@/components/others/Section";
+import Subtitle from "@/components/others/Subtitle";
+import Skills from "@/components/explore/skills/Skills";
+import GetInTouch from "@/components/explore/getInTouch/GetInTouch";
+import Footer from "@/components/explore/footer/Footer";
 import { useIntersecting } from "@/hooks/useIntersecting";
 import { forwardRef, RefObject } from "react";
 
