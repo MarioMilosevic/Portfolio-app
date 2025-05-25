@@ -209,7 +209,6 @@ export const experiences: ExperienceType[] = [
   {
     companyName: "Emasys",
     destination: "Zagreb Croatia",
-    type: "Remote",
     job: "Frontend Developer",
     startDate: "Aug 2023",
     endDate: "Present",
@@ -228,7 +227,6 @@ export const experiences: ExperienceType[] = [
   {
     companyName: "Devcor",
     destination: "Podgorica Montenegro",
-    type: "On-site",
     job: "Frontend Developer",
     startDate: "Oct 2021",
     endDate: "Jun 2023",

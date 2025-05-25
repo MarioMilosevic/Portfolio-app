@@ -12,18 +12,17 @@ const CompanyExperience = ({ exp }: CompanyExperienceProps) => {
     endDate,
     job,
     destination,
-    type,
     about,
     accomplishments,
   } = exp;
   return (
-    <div className="mb-12 flex flex-col gap-4 pl-12 border-l-4">
+    <div className="mb-12 flex flex-col gap-6 px-4 md:px-0 md:pl-12 md:border-l-4">
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-1">
           <h2 className="uppercase font-semibold text-slate-50">
             {companyName}
           </h2>
-          <p>
+          <p className="md:text-base text-sm">
             {startDate} - {endDate}
           </p>
         </div>
@@ -31,15 +30,15 @@ const CompanyExperience = ({ exp }: CompanyExperienceProps) => {
           <h2 className="text-slate-500 uppercase">{job}</h2>
           <div className="flex items-center gap-1">
             <FaMapMarkerAlt />
-            <p>
-              {destination}, {type}
+            <p className="md:text-base text-sm">
+              {destination}
             </p>
           </div>
         </div>
       </div>
       <p>{about}</p>
       <ul className="list list-disc list-inside">
-        <p className="text-lg mb-2">Key accomplishments</p>
+        <p className="text-lg font-semibold mb-2">Key accomplishments</p>
         {accomplishments.map((acc, index) => (
           <li key={index} className="text-sm">
             {acc}

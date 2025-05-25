@@ -30,7 +30,6 @@ export type ExperienceType = {
   companyName: string;
   destination: string;
   about: string;
-  type: "Hybrid" | "Remote" | "On-site";
   job: string;
   startDate: string;
   endDate: string;

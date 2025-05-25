@@ -11,7 +11,7 @@ const ScrollDownIndicator = ({ onScroll }: ScrollDownIndicatorProps) => {
       onClick={onScroll}
       aria-label="Scroll down"
     >
-      <span>SCROLL</span>
+      <span className="md:text-base text-sm">SCROLL</span>
       {[0, 0.2, 0.4].map((delay, index) => (
         <motion.div
           key={index}
@@ -24,7 +24,7 @@ const ScrollDownIndicator = ({ onScroll }: ScrollDownIndicatorProps) => {
             delay,
           }}
         >
-          <div className="w-3 h-3 border-b border-r border-white rotate-45" />
+          <div className="md:w-3 md:h-3 w-2 h-2 border-b border-r border-white rotate-45" />
         </motion.div>
       ))}
     </button>
