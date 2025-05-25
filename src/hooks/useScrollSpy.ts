@@ -18,12 +18,12 @@ export function useScrollSpy({ sectionRefs, offset = 0 }: ScrollSpyConfig) {
         if (!el) continue;
 
         const rect = el.getBoundingClientRect();
-        const top = rect.top + offset;
-        const height = rect.height;
+        const sectionTop = rect.top + offset;
+        const sectionHeight = rect.height;
 
-        const sectionMiddle = top + height / 2;
+        const triggerPoint = sectionTop + Math.min(sectionHeight * 0.5, 600);
 
-        if (sectionMiddle > 0 && sectionMiddle < screenHeight) {
+        if (triggerPoint > 0 && triggerPoint < screenHeight) {
           setActiveIndex(i);
           break;
         }
