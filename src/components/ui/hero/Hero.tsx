@@ -3,7 +3,7 @@ import Section from "@/components/ui/others/Section";
 import ScrollDownIndicator from "@/components/ui/others/ScrollDownIndicator";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "@/lib/utils";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { memo, forwardRef } from "react";
 
 const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
@@ -21,13 +21,13 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         >
           <div className="hero-overlay absolute w-full h-full backdrop-blur-sm z-10"></div>
           <div className="hero-content text-neutral-content flex flex-col z-20">
-            <div className=" flex-col lg:flex-row justify-start absolute bottom-1/2 right-1/2 translate-x-1/2  translate-y-1/2 max-w-[666px] w-full">
-              <div className="flex flex-col gap-6">
+            <div className=" flex-col md:flex-row absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 md:max-w-[666px] w-full">
+              <div className="flex flex-col gap-6 items-center md:items-start">
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
-                  className="text-7xl font-bold text-slate-50"
+                  className="text-5xl md:text-7xl font-bold text-slate-50"
                 >
                   Mario Milošević
                 </motion.h1>
@@ -35,7 +35,7 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  className="text-2xl text-slate-50"
+                  className="text-lg md:text-2xl text-slate-50"
                 >
                   FRONTEND DEVELOPER
                 </motion.p>

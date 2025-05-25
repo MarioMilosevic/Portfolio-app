@@ -16,7 +16,7 @@ const NavigationButton = ({
     <li>
       <a
         className={clsx(
-          "btn md:uppercase text-base capitalize  btn-outline md:btn-soft btn-primary",
+          "btn md:uppercase capitalize btn-outline md:btn-soft btn-primary",
           { "btn-active": isActive }
         )}
         onClick={onNavigationClick}
