@@ -28,25 +28,33 @@ const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         <Subtitle>Freetime Projects</Subtitle>
         {personalProjects.map((project, index) => {
           const isEven = index % 2 === 0;
+          const {
+            title,
+            createdAt,
+            description,
+            imagePath,
+            code,
+            liveDemo,
+            projectIcons,
+          } = project;
           return (
             <Project key={index}>
               <ProjectHeader isEven={isEven}>
                 <ProjectTitleWrapper>
-                  {<project.mainIcon />}
-                  <ProjectTitle>{project.title}</ProjectTitle>
+                  <ProjectTitle>
+                    {<project.mainIcon />}
+                    {title}
+                  </ProjectTitle>
                 </ProjectTitleWrapper>
-                <ProjectDateCreated>{project.createdAt}</ProjectDateCreated>
+                <ProjectDateCreated>{createdAt}</ProjectDateCreated>
               </ProjectHeader>
               <ProjectMain isEven={isEven}>
-                <ProjectDescription>{project.description}</ProjectDescription>
-                <ProjectImage path={project.imagePath} />
+                <ProjectImage path={imagePath} />
+                <ProjectDescription>{description}</ProjectDescription>
               </ProjectMain>
               <ProjectFooter isEven={isEven}>
-                <ProjectTechnologies iconObj={project.projectIcons} />
-                <ProjectActions
-                  code={project.code}
-                  liveDemo={project.liveDemo}
-                />
+                <ProjectTechnologies iconObj={projectIcons} />
+                <ProjectActions code={code} liveDemo={liveDemo} />
               </ProjectFooter>
             </Project>
           );

@@ -10,7 +10,7 @@ import {
 
 const ContactInformation = () => {
   return (
-    <div className="flex flex-col gap-2 pl-4 md:pl-0 pb-8 md:pb-0 md:border-r md:border-r-white md:pr-8">
+    <div className="flex flex-col gap-2 pb-8 md:pb-0 md:border-r md:border-r-white md:pr-8">
       <img
         src={marioImage}
         alt="Contact image"

@@ -1,7 +1,7 @@
 
 const ProjectDateCreated = ({children}:{children:React.ReactNode}) => {
   return (
-    <p className="text-sm">
+    <p className="md:text-sm text-xs">
       Date of creation: {children}
     </p>
   )

@@ -9,8 +9,8 @@ const ProjectMain = ({ children, isEven }: ProjectMainProps) => {
   return (
     <div
       className={cn(
-        "flex gap-6 items-center",
-        isEven ? "flex-row" : "flex-row-reverse"
+        "flex md:flex-row flex-col gap-6 items-center",
+        isEven ? "md:flex-row" : "md:flex-row-reverse"
       )}
     >
       {children}

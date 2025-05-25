@@ -8,7 +8,7 @@ type ProjectActionsType = {
 
 const ProjectActions = ({ code, liveDemo }: ProjectActionsType) => {
   return (
-    <div className="flex gap-4 items-center">
+    <div className="flex gap-4 items-center text-sm md:text-base">
       <ProjectAction path={code}>
         <span>Code</span>
         <FaGithub />

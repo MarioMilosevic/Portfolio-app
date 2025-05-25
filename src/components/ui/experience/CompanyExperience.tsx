@@ -16,7 +16,7 @@ const CompanyExperience = ({ exp }: CompanyExperienceProps) => {
     accomplishments,
   } = exp;
   return (
-    <div className="mb-12 flex flex-col gap-6 px-4 md:px-0 md:pl-12 md:border-l-4">
+    <div className="mb-12 flex flex-col gap-6 md:pl-12 md:border-l-4">
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-1">
           <h2 className="uppercase font-semibold text-slate-50">

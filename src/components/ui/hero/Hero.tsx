@@ -10,7 +10,7 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
     const iconSize = 25;
     return (
-      <Section id="home" className="max-w-full pt-0" ref={ref}>
+      <Section id="home" className="max-w-full pt-0 px-0" ref={ref}>
         <div
           className="hero min-h-screen relative"
           style={{
