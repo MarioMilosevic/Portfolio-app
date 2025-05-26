@@ -12,9 +12,6 @@ const GetInTouch = () => {
 
   return (
     <form
-      action="mailto:mariomilosevic887@gmail.com"
-      method="post"
-      encType="text/plain"
       className="flex flex-col"
       id="footerForm"
       ref={form}
