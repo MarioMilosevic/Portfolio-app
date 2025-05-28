@@ -179,7 +179,7 @@ export const recommendations: RecommendationType[] = [
     linkedin: "https://www.linkedin.com/in/nemanja-malesija/",
     github: "https://github.com/nemanjamalesija",
     instagram: "https://www.instagram.com/nemanja_malesija/",
-    text: "I have worked with Mario for several years now, before at Devcor, and now at Emasys. He was always respectfull of others, and worked very professionaly, and it has truly been a joy to work with him. While other developers could get offended when receiving a feedback, he always used feedback as an opportunity to learn and improve, whether it being good or bad feedback, he always wanted to understand the bigger picture.",
+    text: "I have worked with Mario for several years now—first at Devcor, and currently at Emasys. He has always been respectful of others and consistently professional in his work. It has truly been a joy to work with him. While some developers might take offense at receiving feedback, Mario always sees it as an opportunity to learn and grow. Whether the feedback is positive or negative, he strives to understand the bigger picture and use it to improve.",
   },
   {
     fullName: "Dejan Bogićević",
@@ -188,7 +188,7 @@ export const recommendations: RecommendationType[] = [
     linkedin: "https://www.linkedin.com/in/dejan-bogi%C4%87evi%C4%87-66b47ba3/",
     github: "",
     instagram: "https://www.instagram.com/dbogi_89/",
-    text: "I've known Mario for several years, and working with him has always been a pleasure. His curiosity and attention to detail stand out immediately. Rather than just writing code to fix a problem, Mario carefully considers long-term maintainability, accessibility, and performance. He consistently looks beyond the immediate task, thinking about how each part fits into the overall system. His problem-solving is thoughtful, his code is clean and scalable, and he's always eager to learn and improve. Feedback—positive or negative—is something he welcomes, using it as a tool to grow and refine his craft. A reliable and growth-minded developer, Mario adds value to every project he joins",
+    text: "I’ve known Mario for several years, and working with him has always been a pleasure. His curiosity and attention to detail stand out immediately. Rather than simply writing code to fix a problem, Mario carefully considers long-term maintainability, accessibility, and performance. He consistently looks beyond the immediate task, thinking about how each component fits into the overall system. His problem-solving is thoughtful, his code is clean and scalable, and he’s always eager to learn and improve. He welcomes feedback—positive or negative—and uses it as a tool to grow and refine his craft. As a reliable and growth-minded developer, Mario adds value to every project he joins.",
   },
   {
     fullName: "Dražen Jelić",
@@ -197,7 +197,7 @@ export const recommendations: RecommendationType[] = [
     linkedin: "https://www.linkedin.com/in/drazen-jelic-1a1b24238/",
     github: "",
     instagram: "https://www.instagram.com/drazen.jelic/",
-    text: "I met Mario last year, and we immediately clicked. What stood out to me was his professionalism and sharp attention to detail. Even when facing tight deadlines or high-pressure situations, he remained calm and focused. Rather than rushing into code, Mario would take a step back, write out the problem on a whiteboard, and clearly lay out all his options before deciding on the most effective solution. That level of composure and strategic thinking is rare—and it made working with him not only productive but genuinely enjoyable.",
+    text: "I met Mario last year, and we immediately clicked. What stood out to me was his professionalism and sharp attention to detail. Even when facing tight deadlines or high-pressure situations, he remained calm and focused. Rather than rushing into code, Mario would take a step back, map out the problem on a whiteboard, and clearly lay out his options before deciding on the most effective solution. That level of composure and strategic thinking is rare—and it made working with him not only productive but genuinely enjoyable.",
   },
   {
     fullName: "Ilhan Kalač",
@@ -206,7 +206,7 @@ export const recommendations: RecommendationType[] = [
     linkedin: "https://www.linkedin.com/in/ilhankalac/",
     github: "https://github.com/ilhankalac",
     instagram: "https://www.instagram.com/vizija/",
-    text: "Mario once asked me to review one of his personal side projects. Even outside of work, he is always eager to improve by practicing on side projects and experimenting with new ideas. This clearly shows his curiosity and strong commitment to becoming a better developer every day. After I gave him detailed feedback with suggestions on how to enhance his project, he took it seriously and implemented most of the improvements we discussed. I believe Mario is a great developer, and with time, he will continue to improve.",
+    text: "Mario once asked me to review one of his personal side projects. Even outside of work, he’s always eager to improve—constantly practicing, experimenting with new ideas, and pushing his skills further. This clearly reflects his curiosity and strong commitment to becoming a better developer every day. After I gave him detailed feedback with suggestions for improvement, he took it seriously and implemented changes we discussed. I believe Mario is already a great developer, and with time, he will only continue to grow.",
   },
 ];
 
