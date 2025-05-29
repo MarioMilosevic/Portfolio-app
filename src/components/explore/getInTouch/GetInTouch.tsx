@@ -23,12 +23,12 @@ const GetInTouch = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
       Swal.fire({
         title: "Success!",
         text: "Message sent successfully",
         icon: "success",
       });
+      form.current?.reset();
     }
   };
 

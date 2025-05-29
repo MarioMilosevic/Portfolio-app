@@ -179,7 +179,7 @@ export const recommendations: RecommendationType[] = [
     linkedin: "https://www.linkedin.com/in/nemanja-malesija/",
     github: "https://github.com/nemanjamalesija",
     instagram: "https://www.instagram.com/nemanja_malesija/",
-    text: "I have worked with Mario for several years now—first at Devcor, and currently at Emasys. He has always been respectful of others and consistently professional in his work. It has truly been a joy to work with him. While some developers might take offense at receiving feedback, Mario always sees it as an opportunity to learn and grow. Whether the feedback is positive or negative, he strives to understand the bigger picture and use it to improve.",
+    text: "I have worked with Mario for several years now, first at Devcor, and currently at Emasys. He has always been respectful of others and consistently professional in his work. It has truly been a joy to work with him. While some developers might take offense at receiving feedback, Mario always sees it as an opportunity to learn and grow. Whether the feedback is positive or negative, he strives to understand the bigger picture and use it to improve.",
   },
   {
     fullName: "Dejan Bogićević",

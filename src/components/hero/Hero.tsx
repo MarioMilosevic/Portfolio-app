@@ -1,6 +1,7 @@
 import Icon from "@/components/others/Icon";
 import Section from "@/components/others/Section";
 import ScrollDownIndicator from "@/components/others/ScrollDownIndicator";
+import resume from "@/resume/MarioMilosevicCV.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -51,7 +52,7 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
                   <Icon path="https://www.linkedin.com/in/mario-milosevic/">
                     <FaLinkedin size={iconSize} color="white" />
                   </Icon>
-                  <Icon path="/">
+                  <Icon path={resume}>
                     <p className="text-white text-lg">Resume</p>
                   </Icon>
                 </motion.div>

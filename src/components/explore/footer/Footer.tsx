@@ -1,4 +1,6 @@
 import { scrollToSection } from "@/lib/utils";
+import resume from "@/resume/MarioMilosevicCV.pdf";
+
 const Footer = () => {
   return (
     <footer className="py-10 flex flex-col gap-8 items-center">
@@ -58,7 +60,9 @@ const Footer = () => {
           >
             GitHub
           </a>
-          <a className="link link-hover">Resume</a>
+          <a className="link link-hover" href={resume} target="_blank">
+            Resume
+          </a>
         </nav>
         <nav>
           <h6 className="footer-title">Explore</h6>
