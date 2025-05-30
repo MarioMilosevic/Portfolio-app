@@ -29,6 +29,12 @@ const GetInTouch = () => {
         icon: "success",
       });
       form.current?.reset();
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: "Message was not sent, please try reaching over email directly",
+        icon: "error",
+      });
     }
   };
 
