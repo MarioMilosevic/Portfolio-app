@@ -212,11 +212,21 @@ export const recommendations: RecommendationType[] = [
 
 export const experiences: ExperienceType[] = [
   {
+    companyName: "Red Black Tree d.o.o.",
+    destination: "Belgrade Serbia",
+    job: "Frontend Developer",
+    startDate: "Aug 2025",
+    endDate: "Present",
+    about:
+      "At Red Black Tree, I am part of a team that specializes in developing web applications for various clients. The company is known for its innovative approach and commitment to delivering high-quality software solutions. Currently, I am working on a project that is regarding mental health of people, suffering from different mental disorders. ",
+    accomplishments: [],
+  },
+  {
     companyName: "Emasys",
     destination: "Zagreb Croatia",
     job: "Frontend Developer",
     startDate: "Aug 2023",
-    endDate: "Present",
+    endDate: "Aug 2025",
     about:
       "At Emasys, I joined the team through a recommendation from a colleague at Devcor and have been working with them remotely. The company specializes in energy efficiency, providing solutions to optimize energy consumption.",
     accomplishments: [
