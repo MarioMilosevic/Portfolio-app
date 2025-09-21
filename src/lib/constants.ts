@@ -219,7 +219,17 @@ export const experiences: ExperienceType[] = [
     endDate: "Present",
     about:
       "At Red Black Tree, I am part of a team that specializes in developing web applications for various clients. The company is known for its innovative approach and commitment to delivering high-quality software solutions. Currently, I am working on a project that is regarding mental health of people, suffering from different mental disorders. ",
-    accomplishments: [],
+    accomplishments: [
+      "Implemented and maintained features in Nuxt 2 / Vue 2, ensuring high code quality,",
+      "Managed global state using Vuex, improving app scalability and maintainability,",
+      "Styled components with SCSS, creating reusable and maintainable styles,",
+      "Contributed to migrating the application from Nuxt 2 (JavaScript) to React (TypeScript) using microfrontend architecture,",
+      "Integrated Sentry for error monitoring and created detailed Jira tickets for bug reporting and tracking.",
+      "Used Slack to communicate with the clients,",
+      "Collaborated with the backend team working on Flask, ensuring smooth API integration,",
+      "Wrote unit tests for React components using Vitest, improving code reliability and test coverage,",
+      "Maintained effective communication with clients and team members, facilitating collaboration and alignment.",
+    ],
   },
   {
     companyName: "Emasys",
