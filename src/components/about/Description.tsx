@@ -5,12 +5,11 @@ const Description = () => {
         I am a frontend developer from Montenegro currently living in Serbia who
         is passionate about creating user-friendly web experiences, skilled in
         React, Vue, Node, Next and TypeScript, and focusing on building
-        responsive and modern web applications.
+        responsive and modern web applications. Ovo je neka promjena koju sam
+        dodao jer zelim malo da provjezbam git diff i generalno rad sa gitom.
       </p>
       <p className="text-justify md:text-base text-sm">
-        As a fully employed frontend developer at a company specializing in web
-        applications, I am contantly advancing and refining my frontend
-        expertise.
+        Ovo sam izbrisao i dodao novi tekst
       </p>
       <p>
         I have experience working with the Scrum methodology and am skilled in

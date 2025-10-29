@@ -48,7 +48,9 @@ export const navigationLinks = [
   "Recommendations",
   "Explore",
 ];
-
+console.log(
+  "odje bi valjalo da promjenim svim ovim konstantama da su u velikim slovima a ne ovako u malim"
+);
 export const personalProjects: ProjectType[] = [
   {
     mainIcon: FaGamepad,
@@ -223,11 +225,12 @@ export const experiences: ExperienceType[] = [
       "Implemented and maintained features in Nuxt 2 / Vue 2, ensuring high code quality,",
       "Managed global state using Vuex, improving app scalability and maintainability,",
       "Styled components with SCSS, creating reusable and maintainable styles,",
-      "Contributed to migrating the application from Nuxt 2 (JavaScript) to React (TypeScript) using microfrontend architecture,",
+      "Contributed to migrating the application from Nuxt 2 (JavaScript) to React (TypeScript), and from SCSS to Tailwind, using microfrontend architecture,",
       "Integrated Sentry for error monitoring and created detailed Jira tickets for bug reporting and tracking.",
       "Used Slack to communicate with the clients,",
       "Collaborated with the backend team working on Flask, ensuring smooth API integration,",
       "Wrote unit tests for React components using Vitest, improving code reliability and test coverage,",
+      "Implemented storybook for UI component development and documentation, enhancing team collaboration and design consistency,",
       "Maintained effective communication with clients and team members, facilitating collaboration and alignment.",
     ],
   },
