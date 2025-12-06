@@ -1,6 +1,6 @@
 import NavigationButton from "@/components/navigation/NavigationButton";
 import AnimatedHamburgerButton from "@/components/navigation/AnimatedHamburgerButton";
-import { navigationLinks } from "@/lib/constants";
+import { NAVIGATION_LINKS } from "@/lib/constants";
 import { scrollToSection } from "@/lib/utils";
 import { useState } from "react";
 
@@ -32,7 +32,7 @@ const Navigation = ({ activeLink, setActiveLink }: NavigationProps) => {
           navigationOpen ? "scale-y-100" : "md:scale-y-100 scale-y-0"
         } transition-all duration-300 top-16 md:top-0 flex flex-col md:flex-row left-0 pl-2 pb-12 gap-1 md:gap-0 md:pb-0 md:pl-0 md:bottom-1/2 md:translate-y-1/2 md:left-1/2 md:-translate-x-1/2`}
       >
-        {navigationLinks.map((link, index) => (
+        {NAVIGATION_LINKS.map((link, index) => (
           <NavigationButton
             key={index}
             isActive={activeLink === index ? true : false}

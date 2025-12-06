@@ -30,17 +30,17 @@ import {
   ProjectType,
   RecommendationType,
 } from "@/lib/globalTypes";
-import dejan from "/images/recommendations/dejan.jpeg";
-import nemanja from "/images/recommendations/nemanja.jpg";
-import drazen from "/images/recommendations/drazen.jpg";
-import ilhan from "/images/recommendations/ilhan.jpg";
+import DEJAN from "/images/recommendations/dejan.jpeg";
+import NEMANJA from "/images/recommendations/nemanja.jpg";
+import DRAZEN from "/images/recommendations/drazen.jpg";
+import ILHAN from "/images/recommendations/ilhan.jpg";
 
 export const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 export const privateKey = import.meta.env.VITE_EMAILJS_PRIVATE_KEY;
 export const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 export const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
-export const navigationLinks = [
+export const NAVIGATION_LINKS = [
   "Home",
   "About",
   "Experience",
@@ -51,7 +51,7 @@ export const navigationLinks = [
 console.log(
   "odje bi valjalo da promjenim svim ovim konstantama da su u velikim slovima a ne ovako u malim"
 );
-export const personalProjects: ProjectType[] = [
+export const PERSONAL_PROJECTS: ProjectType[] = [
   {
     mainIcon: FaGamepad,
     createdAt: "April 2025",
@@ -156,7 +156,7 @@ export const personalProjects: ProjectType[] = [
   },
 ];
 
-export const mySkills = [
+export const MY_SKILLS = [
   { icon: FaReact, text: "React.js" },
   { icon: RiNextjsFill, text: "Next.js" },
   { icon: FaVuejs, text: "Vue.js" },
@@ -173,10 +173,10 @@ export const mySkills = [
   { icon: FaGitAlt, text: "Git" },
 ];
 
-export const recommendations: RecommendationType[] = [
+export const RECOMMENDATIONS: RecommendationType[] = [
   {
     fullName: "Nemanja Malesija",
-    image: nemanja,
+    image: NEMANJA,
     role: "Frontend Developer",
     linkedin: "https://www.linkedin.com/in/nemanja-malesija/",
     github: "https://github.com/nemanjamalesija",
@@ -185,7 +185,7 @@ export const recommendations: RecommendationType[] = [
   },
   {
     fullName: "Dejan Bogićević",
-    image: dejan,
+    image: DEJAN,
     role: "Lead Software Engineer",
     linkedin: "https://www.linkedin.com/in/dejan-bogi%C4%87evi%C4%87-66b47ba3/",
     github: "",
@@ -194,7 +194,7 @@ export const recommendations: RecommendationType[] = [
   },
   {
     fullName: "Dražen Jelić",
-    image: drazen,
+    image: DRAZEN,
     role: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/drazen-jelic-1a1b24238/",
     github: "",
@@ -203,7 +203,7 @@ export const recommendations: RecommendationType[] = [
   },
   {
     fullName: "Ilhan Kalač",
-    image: ilhan,
+    image: ILHAN,
     role: "Software Developer",
     linkedin: "https://www.linkedin.com/in/ilhankalac/",
     github: "https://github.com/ilhankalac",
@@ -212,7 +212,7 @@ export const recommendations: RecommendationType[] = [
   },
 ];
 
-export const experiences: ExperienceType[] = [
+export const EXPERIENCES: ExperienceType[] = [
   {
     companyName: "Red Black Tree d.o.o.",
     destination: "Belgrade Serbia",

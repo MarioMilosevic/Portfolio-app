@@ -13,7 +13,7 @@ import ProjectTechnologies from "@/components/projects/footer/ProjectTechnologie
 import ProjectActions from "@/components/projects/footer/ProjectActions";
 
 import { forwardRef, RefObject } from "react";
-import { personalProjects } from "@/lib/constants";
+import { PERSONAL_PROJECTS } from "@/lib/constants";
 import { useIntersecting } from "@/hooks/useIntersecting";
 
 const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
@@ -26,7 +26,7 @@ const Projects = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         className="flex flex-col gap-2 invisible"
       >
         <Subtitle>Freetime Projects</Subtitle>
-        {personalProjects.map((project, index) => {
+        {PERSONAL_PROJECTS.map((project, index) => {
           const isEven = index % 2 === 0;
           const {
             title,

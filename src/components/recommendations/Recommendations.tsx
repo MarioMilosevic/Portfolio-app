@@ -3,7 +3,7 @@ import Subtitle from "@/components/others/Subtitle";
 import Recommendation from "@/components/recommendations/Recommendation";
 import { forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
-import { recommendations } from "@/lib/constants";
+import { RECOMMENDATIONS } from "@/lib/constants";
 
 const Recommendations = forwardRef<
   HTMLElement,
@@ -13,7 +13,7 @@ const Recommendations = forwardRef<
   return (
     <Section id="recommendations" ref={ref} className="invisible">
       <Subtitle>Recommendations</Subtitle>
-      {recommendations.map((recommendation, index) => (
+      {RECOMMENDATIONS.map((recommendation, index) => (
         <Recommendation key={index} recommendation={recommendation} />
       ))}
     </Section>
