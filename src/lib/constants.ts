@@ -20,6 +20,8 @@ import {
   SiSupabase,
   SiTypescript,
   SiJavascript,
+  SiNuxtdotjs,
+  SiJira,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -160,6 +162,7 @@ export const MY_SKILLS = [
   { icon: FaReact, text: "React.js" },
   { icon: RiNextjsFill, text: "Next.js" },
   { icon: FaVuejs, text: "Vue.js" },
+  { icon: SiNuxtdotjs, text: "Nuxt.js" },
   { icon: SiTypescript, text: "TypeScript" },
   { icon: SiJavascript, text: "JavaScript" },
   { icon: FaNodeJs, text: "Node.js" },
@@ -171,6 +174,7 @@ export const MY_SKILLS = [
   { icon: SiTailwindcss, text: "TailwindCSS" },
   { icon: FaSass, text: "Sass" },
   { icon: FaGitAlt, text: "Git" },
+  { icon: SiJira, text: "Jira" },
 ];
 
 export const RECOMMENDATIONS: RecommendationType[] = [
