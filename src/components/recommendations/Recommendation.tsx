@@ -21,12 +21,12 @@ const Recommendation = ({ recommendation }: RecommendationProps) => {
           <div className="w-16 rounded-full">
             <img src={image} alt={image} />
           </div>
-          <span className="flex flex-col gap-1">
-            <p className="font-semibold md:text-base text-sm">{fullName}</p>
-            <p className="font-semibold md:text-base text-sm">{role}</p>
+          <span className="flex flex-row gap-1 sm:flex-col">
+            <p className="font-semibold md:text-base text-xs">{fullName}</p>
+            <p className="italic md:text-base text-xs">{role}</p>
           </span>
         </div>
-        <div className="flex md:gap-4 gap-2">
+        <div className="absolute -bottom-5 right-1/2 translate-x-1/2 sm:block flex md:gap-4 gap-2">
           {github && (
             <Icon size="small" path={github}>
               <FaGithub size={iconSize} />
