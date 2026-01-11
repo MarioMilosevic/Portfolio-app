@@ -22,6 +22,7 @@ import {
   SiJavascript,
   SiNuxtdotjs,
   SiJira,
+  SiVitest,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -175,6 +176,7 @@ export const MY_SKILLS = [
   { icon: FaSass, text: "Sass" },
   { icon: FaGitAlt, text: "Git" },
   { icon: SiJira, text: "Jira" },
+  { icon: SiVitest, text: "Vitest" },
 ];
 
 export const RECOMMENDATIONS: RecommendationType[] = [
