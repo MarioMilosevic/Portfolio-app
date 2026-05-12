@@ -52,7 +52,7 @@ export const NAVIGATION_LINKS = [
   "Explore",
 ];
 console.log(
-  "odje bi valjalo da promjenim svim ovim konstantama da su u velikim slovima a ne ovako u malim"
+  "odje bi valjalo da promjenim svim ovim konstantama da su u velikim slovima a ne ovako u malim",
 );
 export const PERSONAL_PROJECTS: ProjectType[] = [
   {
@@ -220,7 +220,7 @@ export const RECOMMENDATIONS: RecommendationType[] = [
 
 export const EXPERIENCES: ExperienceType[] = [
   {
-    companyName: "Red Black Tree d.o.o.",
+    companyName: "Red Black Tree",
     destination: "Belgrade Serbia",
     job: "Frontend Developer",
     startDate: "Aug 2025",
