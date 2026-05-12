@@ -51,9 +51,7 @@ export const NAVIGATION_LINKS = [
   "Recommendations",
   "Explore",
 ];
-console.log(
-  "odje bi valjalo da promjenim svim ovim konstantama da su u velikim slovima a ne ovako u malim",
-);
+
 export const PERSONAL_PROJECTS: ProjectType[] = [
   {
     mainIcon: FaGamepad,
