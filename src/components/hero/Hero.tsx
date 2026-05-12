@@ -1,7 +1,7 @@
 import Icon from "@/components/others/Icon";
 import Section from "@/components/others/Section";
 import ScrollDownIndicator from "@/components/others/ScrollDownIndicator";
-import resume from "../../../resume/MarioMilosevicCV.pdf";
+import resume from "../../../resume/Mario_Milosevic_CV_2026.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -63,7 +63,7 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         </div>
       </Section>
     );
-  }
+  },
 );
 
 Hero.displayName = "Hero";

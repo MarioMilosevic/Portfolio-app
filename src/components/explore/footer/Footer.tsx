@@ -1,5 +1,5 @@
 import { scrollToSection } from "@/lib/utils";
-import resume from "../../../../resume/MarioMilosevicCV.pdf"
+import resume from "../../../../resume/Mario_Milosevic_CV_2026.pdf";
 
 const Footer = () => {
   return (
