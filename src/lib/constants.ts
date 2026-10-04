@@ -23,6 +23,7 @@ import {
   SiNuxtdotjs,
   SiJira,
   SiVitest,
+  SiNestjs,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -43,6 +44,13 @@ export const privateKey = import.meta.env.VITE_EMAILJS_PRIVATE_KEY;
 export const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 export const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
+export const DESCRIPTION_TEXTS = [
+  "I am a frontend developer from Montenegro currently living in Serbia who is passionate about creating user-friendly web experiences, skilled in React, Vue, Node, Next and TypeScript, and focusing on building responsive and modern web applications.",
+  " As a fully employed frontend developer at a company specializing in web applications, I am constantly advancing and refining my frontend expertise.",
+  "I have experience working with the Scrum methodology and am skilled in using Atlassian tools such as Jira and Sourcetree for agile project management.",
+  "Outside of work, I enjoy playing video games, watching TV shows, staying active through working out and cycling, and constantly striving for self-improvement. I truly believe that great things come only through discipline. ",
+];
+
 export const NAVIGATION_LINKS = [
   "Home",
   "About",
@@ -58,11 +66,11 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
     createdAt: "April 2025",
     title: "GameVerse - game store for some of my favorite video games",
     description:
-      "GameVerse is a full-stack app built with Vue 3, Express.js, and PostgreSQL. It features 9 games, user accounts with JWT-based auth, the ability to leave ratings (1–10) and comments. The UI, styled with Tailwind CSS, supports dark mode and is fully responsive. Users can update their profiles, and an admin dashboard provides user management tools. The frontend uses Zod for validation, and the backend returns clear response messages. User preferences and JWTs are stored in localStorage. Hosted on Render.",
+      "GameVerse is a full-stack app built with Vue 3, Express, and PostgreSQL. It features 9 games, user accounts with JWT-based auth, the ability to leave ratings (1–10) and comments. The UI, styled with Tailwind CSS, supports dark mode and is fully responsive. Users can update their profiles, and an admin dashboard provides user management tools. The frontend uses Zod for validation, and the backend returns clear response messages. User preferences and JWTs are stored in localStorage. Hosted on Render.",
     imagePath: "/images/projects/gameVerseImg.PNG",
     projectIcons: [
-      { icon: FaVuejs, text: "Vue.js" },
-      { icon: SiExpress, text: "Express.js" },
+      { icon: FaVuejs, text: "Vue" },
+      { icon: SiExpress, text: "Express" },
       { icon: SiTypescript, text: "TypeScript" },
       { icon: SiPostgresql, text: "PostgreSQL" },
       { icon: SiTailwindcss, text: "TailwindCSS" },
@@ -78,7 +86,7 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
       "Modern responsive e-commerce furniture store featuring a dymanic landing page, with smooth scroll effects. Integrated a product slider and implemented client-side filtering and sorting to improve UX. State managed using Redux Toolkit. Made responsive with Tailwind CSS.",
     imagePath: "/images/projects/x-shoppers-dream.PNG",
     projectIcons: [
-      { icon: FaReact, text: "React.js" },
+      { icon: FaReact, text: "React" },
       { icon: SiRedux, text: "Redux Toolkit" },
       { icon: SiTypescript, text: "TypeScript" },
       { icon: SiTailwindcss, text: "TailwindCSS" },
@@ -94,7 +102,7 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
       "Developed a full-stack feedback application using Vue 3 on the frontend and Supabase as the backend and database. Integrated Cloudinary API for image uploads and implemented infinite scrolling with data fetching on scroll. Features include server-side filtering and sorting, like (upvote) functionality. Utilized SASS for organized styling and Zod for schema-based form validation",
     imagePath: "/images/projects/product-feedback.PNG",
     projectIcons: [
-      { icon: FaVuejs, text: "Vue.js" },
+      { icon: FaVuejs, text: "Vue" },
       { icon: SiTypescript, text: "TypeScript" },
       { icon: SiCloudinary, text: "Cloudinary" },
       { icon: SiSupabase, text: "Supabase" },
@@ -111,7 +119,7 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
       "Cinema 100 is a React application where you can browse through 100 movies, view detailed information, and watch trailers. You can also bookmark your favorite movies and access them later. The app utilizes Firebase for authentication, database storage, and other backend services.",
     imagePath: "/images/projects/cinema-100.PNG",
     projectIcons: [
-      { icon: FaReact, text: "React.js" },
+      { icon: FaReact, text: "React" },
       { icon: SiRedux, text: "Redux Toolkit" },
       { icon: SiTypescript, text: "TypeScript" },
       { icon: IoLogoFirebase, text: "Firebase" },
@@ -125,12 +133,12 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
     createdAt: "February 2025",
     title: "Employee Manager - Admin Dashboard",
     description:
-      "Developed a full-stack employee management system using Vue 3, Express.js, and PostgreSQL. Implemented JWT-based authentication with persistent user sessions via localStorage. Features include user registration, login, and full CRUD functionality for managing employees, along with an admin dashboard for managing user roles and permissions. The frontend, styled with Sass, is fully responsive and utilizes Zod for robust form validation. The backend delivers clear, structured response messages. Hosted on render.",
+      "Developed a full-stack employee management system using Vue 3, Express, and PostgreSQL. Implemented JWT-based authentication with persistent user sessions via localStorage. Features include user registration, login, and full CRUD functionality for managing employees, along with an admin dashboard for managing user roles and permissions. The frontend, styled with Sass, is fully responsive and utilizes Zod for robust form validation. The backend delivers clear, structured response messages. Hosted on render.",
 
     imagePath: "/images/projects/employee-manager.PNG",
     projectIcons: [
-      { icon: FaVuejs, text: "Vue.js" },
-      { icon: SiExpress, text: "Express.js" },
+      { icon: FaVuejs, text: "Vue" },
+      { icon: SiExpress, text: "Express" },
       { icon: SiTypescript, text: "TypeScript" },
       { icon: FaSass, text: "Sass" },
       { icon: SiPostgresql, text: "PostgreSQL" },
@@ -143,11 +151,11 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
     createdAt: "August 2024",
     title: "CityLaneRooms - Admin Room Management",
     description:
-      "CityLaneRooms is an admin-focused full-stack room management application. It features room, bookings, settings, and user management. The frontend is built with React.js, and Supabase is used for the backend and database.\n\nLogin credentials:\nUsername: admin@gmail.com\nPassword: 12345678",
+      "CityLaneRooms is an admin-focused full-stack room management application. It features room, bookings, settings, and user management. The frontend is built with React, and Supabase is used for the backend and database.\n\nLogin credentials:\nUsername: admin@gmail.com\nPassword: 12345678",
 
     imagePath: "/images/projects/citylane-rooms.PNG",
     projectIcons: [
-      { icon: FaReact, text: "React.js" },
+      { icon: FaReact, text: "React" },
       { icon: SiSupabase, text: "Supabase" },
       { icon: SiTypescript, text: "TypeScript" },
       { icon: SiTailwindcss, text: "TailwindCSS" },
@@ -158,20 +166,21 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
 ];
 
 export const MY_SKILLS = [
-  { icon: FaReact, text: "React.js" },
-  { icon: RiNextjsFill, text: "Next.js" },
-  { icon: FaVuejs, text: "Vue.js" },
-  { icon: SiNuxtdotjs, text: "Nuxt.js" },
-  { icon: SiTypescript, text: "TypeScript" },
-  { icon: SiJavascript, text: "JavaScript" },
-  { icon: FaNodeJs, text: "Node.js" },
-  { icon: SiExpress, text: "Express.js" },
-  { icon: SiRedux, text: "Redux" },
-  { icon: SiSupabase, text: "Supabase" },
   { icon: FaHtml5, text: "HTML5" },
   { icon: FaCss3, text: "CSS3" },
-  { icon: SiTailwindcss, text: "TailwindCSS" },
   { icon: FaSass, text: "Sass" },
+  { icon: SiTailwindcss, text: "TailwindCSS" },
+  { icon: SiJavascript, text: "JavaScript" },
+  { icon: SiTypescript, text: "TypeScript" },
+  { icon: FaReact, text: "React" },
+  { icon: FaVuejs, text: "Vue" },
+  { icon: RiNextjsFill, text: "Next" },
+  { icon: SiNuxtdotjs, text: "Nuxt" },
+  { icon: FaNodeJs, text: "Node" },
+  { icon: SiExpress, text: "Express" },
+  { icon: SiNestjs, text: "Nest" },
+  { icon: SiRedux, text: "Redux" },
+  { icon: SiSupabase, text: "Supabase" },
   { icon: FaGitAlt, text: "Git" },
   { icon: SiJira, text: "Jira" },
   { icon: SiVitest, text: "Vitest" },
@@ -266,7 +275,7 @@ export const EXPERIENCES: ExperienceType[] = [
       "At Devcor, I had the opportunity to work on multiple projects for various clients. As an agency, we handled a diverse range of tasks using different solutions.",
     accomplishments: [
       "Utilized HTML CSS and JavaScript to crate 15+ responsive landing pages,",
-      "Successfully migrated legacy JavaScript codebases to React.js and Vue.js with TypeScript,",
+      "Successfully migrated legacy JavaScript codebases to React and Vue with TypeScript,",
       "Participated in product releases and code reviews with senior developers and team leads,",
       "Worked in a cross-functional team to receive and implement design requirements to build and enhance 10+ web applicatons,",
       "Identified and implemented dynamic web solutions in accordance to company standards and best practices.",
