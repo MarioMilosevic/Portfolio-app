@@ -3,9 +3,9 @@ import {
   FaVuejs,
   FaChair,
   FaReact,
-  FaLightbulb,
+  // FaLightbulb,
   FaSass,
-  FaBed,
+  // FaBed,
   FaHtml5,
   FaCss3,
   FaNodeJs,
@@ -16,7 +16,7 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiRedux,
-  SiCloudinary,
+  // SiCloudinary,
   SiSupabase,
   SiTypescript,
   SiJavascript,
@@ -94,23 +94,23 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
     code: "https://github.com/MarioMilosevic/x-shoppers-dream-e-commerce",
     liveDemo: "https://x-shoppers-dream-e-commerce.vercel.app/",
   },
-  {
-    mainIcon: FaLightbulb,
-    createdAt: "December 2024",
-    title: "Product Feedback - app designed for managing feedbacks.",
-    description:
-      "Developed a full-stack feedback application using Vue 3 on the frontend and Supabase as the backend and database. Integrated Cloudinary API for image uploads and implemented infinite scrolling with data fetching on scroll. Features include server-side filtering and sorting, like (upvote) functionality. Utilized SASS for organized styling and Zod for schema-based form validation",
-    imagePath: "/images/projects/product-feedback.PNG",
-    projectIcons: [
-      { icon: FaVuejs, text: "Vue" },
-      { icon: SiTypescript, text: "TypeScript" },
-      { icon: SiCloudinary, text: "Cloudinary" },
-      { icon: SiSupabase, text: "Supabase" },
-      { icon: FaSass, text: "Sass" },
-    ],
-    code: "https://github.com/MarioMilosevic/x-shoppers-dream-e-commerce",
-    liveDemo: "https://x-shoppers-dream-e-commerce.vercel.app/",
-  },
+  //  {
+  //   mainIcon: FaLightbulb,
+  //   createdAt: "December 2024",
+  //   title: "Product Feedback - app designed for managing feedbacks.",
+  //   description:
+  //     "Developed a full-stack feedback application using Vue 3 on the frontend and Supabase as the backend and database. Integrated Cloudinary API for image uploads and implemented infinite scrolling with data fetching on scroll. Features include server-side filtering and sorting, like (upvote) functionality. Utilized SASS for organized styling and Zod for schema-based form validation",
+  //   imagePath: "/images/projects/product-feedback.PNG",
+  //   projectIcons: [
+  //     { icon: FaVuejs, text: "Vue" },
+  //     { icon: SiTypescript, text: "TypeScript" },
+  //     { icon: SiCloudinary, text: "Cloudinary" },
+  //     { icon: SiSupabase, text: "Supabase" },
+  //     { icon: FaSass, text: "Sass" },
+  //   ],
+  //   code: "https://github.com/MarioMilosevic/x-shoppers-dream-e-commerce",
+  //   liveDemo: "https://x-shoppers-dream-e-commerce.vercel.app/",
+  // },
   {
     mainIcon: BiSolidMoviePlay,
     createdAt: "July 2024",
@@ -146,23 +146,23 @@ export const PERSONAL_PROJECTS: ProjectType[] = [
     code: "https://github.com/MarioMilosevic/Employee-Manager",
     liveDemo: "https://employee-manager-ashy.vercel.app/",
   },
-  {
-    mainIcon: FaBed,
-    createdAt: "August 2024",
-    title: "CityLaneRooms - Admin Room Management",
-    description:
-      "CityLaneRooms is an admin-focused full-stack room management application. It features room, bookings, settings, and user management. The frontend is built with React, and Supabase is used for the backend and database.\n\nLogin credentials:\nUsername: admin@gmail.com\nPassword: 12345678",
+  // {
+  //   mainIcon: FaBed,
+  //   createdAt: "August 2024",
+  //   title: "CityLaneRooms - Admin Room Management",
+  //   description:
+  //     "CityLaneRooms is an admin-focused full-stack room management application. It features room, bookings, settings, and user management. The frontend is built with React, and Supabase is used for the backend and database.\n\nLogin credentials:\nUsername: admin@gmail.com\nPassword: 12345678",
 
-    imagePath: "/images/projects/citylane-rooms.PNG",
-    projectIcons: [
-      { icon: FaReact, text: "React" },
-      { icon: SiSupabase, text: "Supabase" },
-      { icon: SiTypescript, text: "TypeScript" },
-      { icon: SiTailwindcss, text: "TailwindCSS" },
-    ],
-    code: "https://github.com/MarioMilosevic/CityLane-Rooms",
-    liveDemo: "https://city-lane-rooms.vercel.app/",
-  },
+  //   imagePath: "/images/projects/citylane-rooms.PNG",
+  //   projectIcons: [
+  //     { icon: FaReact, text: "React" },
+  //     { icon: SiSupabase, text: "Supabase" },
+  //     { icon: SiTypescript, text: "TypeScript" },
+  //     { icon: SiTailwindcss, text: "TailwindCSS" },
+  //   ],
+  //   code: "https://github.com/MarioMilosevic/CityLane-Rooms",
+  //   liveDemo: "https://city-lane-rooms.vercel.app/",
+  // },
 ];
 
 export const MY_SKILLS = [
@@ -235,16 +235,16 @@ export const EXPERIENCES: ExperienceType[] = [
     about:
       "At Red Black Tree, I am part of a team that specializes in developing web applications for various clients. The company is known for its innovative approach and commitment to delivering high-quality software solutions. Currently, I am working on a project that is regarding mental health of people, suffering from different mental disorders. ",
     accomplishments: [
-      "Implemented and maintained features in Nuxt 2 / Vue 2, ensuring high code quality,",
-      "Managed global state using Vuex, improving app scalability and maintainability,",
-      "Styled components with SCSS, creating reusable and maintainable styles,",
-      "Contributed to migrating the application from Nuxt 2 (JavaScript) to React (TypeScript), and from SCSS to Tailwind, using microfrontend architecture,",
-      "Integrated Sentry for error monitoring and created detailed Jira tickets for bug reporting and tracking,",
-      "Used Slack to communicate with the clients,",
-      "Collaborated with the backend team working on Flask, ensuring smooth API integration,",
-      "Wrote unit and integration tests for React components using Vitest, improving code reliability and test coverage,",
-      "Implemented storybook for UI component development and documentation, enhancing team collaboration and design consistency,",
-      "Maintained effective communication with clients and team members, facilitating collaboration and alignment.",
+      "Delivered 200+ merged PRs across a legacy Vue 2/Nuxt 2 app and a React 19 + TypeScript micro-frontend monorepo, working in both stacks during the company's legacy-to-modern frontend migration,",
+      "Built and continuously extended the internal scheduling tool for clinical operations, used to schedule 300+ bookings across 100 practitioners,",
+      "Refactored Cursor-generated pages by splitting logic into dedicated components and extracting shared code into reusable hooks, improving maintainability,",
+
+      "Built a held-slots booking tool and a Session Volume Limits tool with timezone-aware date-range logic based on contract rules, used to manage capacity across multiple contracts,",
+      "Built ADHD and Autism waitlist tables with live booked-slot counts, giving the ops team visibility into 500+ waitlisted patients, and led the responsive redesign of the ops admin,",
+      "Designed, built and owned several end-to-end multi-step forms from scratch, covering patient details, digital forms, uploads, consent and a client dashboard, which have processed 300+ referrals since launch,",
+      "Implemented clinical risk triage flows (green/amber/red criteria, discharge and holding-page redirects) that control how patients move through the app, rolled out gradually behind feature flags to limit clinical risk,",
+      "Extended several client enrollment flows, added Existing Diagnosis Review workflows, and integrated with Semble, a third-party clinical scheduling system, to handle appointment redirects and keep client-record fields in sync,",
+      "Added reusable components to the shared design system and covered new features with Vitest unit/integration tests and Storybook stories.",
     ],
   },
   {
@@ -269,7 +269,7 @@ export const EXPERIENCES: ExperienceType[] = [
     companyName: "Devcor",
     destination: "Podgorica Montenegro",
     job: "Frontend Developer",
-    startDate: "Oct 2021",
+    startDate: "Oct 2022",
     endDate: "Jun 2023",
     about:
       "At Devcor, I had the opportunity to work on multiple projects for various clients. As an agency, we handled a diverse range of tasks using different solutions.",

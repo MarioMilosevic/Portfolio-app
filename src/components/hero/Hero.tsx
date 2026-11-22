@@ -5,7 +5,7 @@ import resume from "../../../resume/Mario_Milosevic_CV_2026.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { memo, forwardRef } from "react";
+import { forwardRef } from "react";
 
 const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
   (_, ref) => {
@@ -68,4 +68,4 @@ const Hero = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
 
 Hero.displayName = "Hero";
 
-export default memo(Hero);
+export default Hero;

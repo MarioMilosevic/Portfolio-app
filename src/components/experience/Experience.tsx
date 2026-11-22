@@ -2,7 +2,7 @@ import Subtitle from "@/components/others/Subtitle";
 import Section from "@/components/others/Section";
 import CompanyExperience from "@/components/experience/CompanyExperience";
 import { EXPERIENCES } from "@/lib/constants";
-import { memo, forwardRef, RefObject } from "react";
+import { forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
 
 const Experience = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
@@ -16,9 +16,9 @@ const Experience = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         ))}
       </Section>
     );
-  }
+  },
 );
 
 Experience.displayName = "Experience";
 
-export default memo(Experience);
+export default Experience;

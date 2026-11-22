@@ -2,7 +2,7 @@ import Section from "@/components/others/Section";
 import Subtitle from "@/components/others/Subtitle";
 import ContactInformation from "@/components/about/ContactInformation";
 import Description from "@/components/about/Description";
-import { memo, forwardRef, RefObject } from "react";
+import { forwardRef, RefObject } from "react";
 import { useIntersecting } from "@/hooks/useIntersecting";
 
 
@@ -23,4 +23,4 @@ const About = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
 
 About.displayName = "About";
 
-export default memo(About);
+export default (About);
