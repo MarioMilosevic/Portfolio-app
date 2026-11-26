@@ -1,7 +1,7 @@
 import Icon from "@/components/others/Icon";
 import Section from "@/components/others/Section";
 import ScrollDownIndicator from "@/components/others/ScrollDownIndicator";
-import resume from "../../../resume/Mario_Milosevic_CV_2026.pdf";
+import resume from "../../../resume/MarioMilosevicUpdatedCV.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
